@@ -1,0 +1,1297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="900.0" prefWidth="1600.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.clientsystem.StatusCheckCodeController">
+    <children>
+      <GridPane fx:id="gridOptionScreen" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="533.3333129882812" minHeight="0.3333334922790243" prefHeight="6.333333253860474" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1079.666666507721" minHeight="10.0" prefHeight="893.6666667461395" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Rectangle fill="#d81e05" height="8.0" smooth="false" stroke="#d81e05" strokeType="INSIDE" strokeWidth="0.0" width="1600.0" />
+            <GridPane stylesheets="@../styles/optionScreenStyle.css" GridPane.rowIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="591.0" minHeight="10.0" prefHeight="268.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="591.0" minHeight="0.0" prefHeight="68.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="591.0" minHeight="2.0" prefHeight="61.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="1002.0" minHeight="10.0" prefHeight="683.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ImageView fitHeight="59.0" fitWidth="322.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+                     <image>
+                        <Image url="@../images/download.png" />
+                     </image>
+                  </ImageView>
+                  <GridPane minHeight="400.0" prefHeight="251.0" prefWidth="1930.0" GridPane.rowIndex="3">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="488.0" minHeight="10.0" prefHeight="279.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="428.0" minHeight="10.0" prefHeight="404.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button id="statusCheckLuggage" minHeight="200.0" minWidth="220.0" mnemonicParsing="false" onAction="#statusCheckAction" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+                           <GridPane.margin>
+                              <Insets left="20.0" />
+                           </GridPane.margin>
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="SPINNER" size="100" />
+                           </graphic>
+                        </Button>
+                        <Button id="registerLostLuggage" alignment="CENTER" minHeight="200.0" minWidth="220.0" mnemonicParsing="false" onAction="#statusRegisterLuggage" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+                           <GridPane.margin>
+                              <Insets right="20.0" />
+                           </GridPane.margin>
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="FILE_TEXT_ALT" size="100" />
+                           </graphic>
+                        </Button>
+                        <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="235.3333740234375" minWidth="10.0" prefWidth="147.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="259.6666259765625" minWidth="10.0" prefWidth="253.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label alignment="CENTER" prefHeight="38.0" prefWidth="264.0" text="Register lost luggage" textAlignment="RIGHT" textFill="#3d3d3d" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </GridPane>
+                        <GridPane GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="261.0" minWidth="10.0" prefWidth="254.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="234.3333740234375" minWidth="10.0" prefWidth="146.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label alignment="CENTER" prefHeight="36.0" prefWidth="298.0" text="Status check for luggage" textFill="#3d3d3d" GridPane.valignment="TOP">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+                  <Line endX="300.0" startX="-100.0" stroke="#ffc61a" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Luggage World Tracking System" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="Montserrat Italic" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+      <GridPane id="statusCheckRef" fx:id="gridReferenceCode" layoutX="1136.0" layoutY="385.0" stylesheets="@../styles/statuscheckcode.css" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="524.0" minHeight="2.0" prefHeight="10.000000238418579" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1078.0" minHeight="10.0" prefHeight="889.9999997615814" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d81e05" height="8.0" stroke="#d81e05" strokeType="INSIDE" strokeWidth="0.0" width="1600.0" />
+            <GridPane style="-fx-background-color: #ffffff;" GridPane.rowIndex="1">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="337.0" minHeight="10.0" prefHeight="187.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="547.0" minHeight="10.0" prefHeight="484.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="381.0" minHeight="10.0" prefHeight="326.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <GridPane prefHeight="285.0" prefWidth="1920.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="718.0" minWidth="10.0" prefWidth="461.6666564941406" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1067.0" minWidth="10.0" prefWidth="884.666748046875" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="427.0" minWidth="10.0" prefWidth="289.333251953125" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <ImageView fitHeight="71.0" fitWidth="464.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/download.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets bottom="50.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <GridPane GridPane.columnIndex="2">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="347.3333740234375" minWidth="10.0" prefWidth="200.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="205.0" minWidth="10.0" prefWidth="78.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="88.33332824707031" minHeight="10.0" prefHeight="20.000001907348633" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="128.33333587646484" minHeight="10.0" prefHeight="59.66666793823242" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="125.0" minHeight="10.0" prefHeight="84.33333206176758" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <ImageView fitHeight="71.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <image>
+                                    <Image url="@../images/helpBtn.png" />
+                                 </image>
+                              </ImageView>
+                              <Button id="helpBtnScreen" mnemonicParsing="false" onAction="#showFaqScreen" prefHeight="69.0" prefWidth="69.0" stylesheets="@../styles/statuscheckcode.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="QUESTION" size="30" />
+                                 </graphic></Button>
+                           </children>
+                        </GridPane>
+                        <GridPane GridPane.columnIndex="1">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="479.3333740234375" minWidth="10.0" prefWidth="55.333343505859375" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="923.6666870117188" minWidth="10.0" prefWidth="824.6666564941406" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="67.0" minHeight="10.0" prefHeight="52.33333206176758" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="113.66666793823242" minHeight="10.0" prefHeight="71.66666793823242" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="87.66667175292969" minHeight="10.0" prefHeight="87.66667175292969" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Button id="homeBtn" fx:id="circleHomeBtn" mnemonicParsing="false" onAction="#returnOptionScreen" prefHeight="63.0" prefWidth="66.0" GridPane.rowIndex="1" />
+                              <FontAwesomeIconView fill="WHITE" glyphName="HOME" size="30" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.rowIndex="1">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="630.0" minWidth="10.0" prefWidth="534.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="831.0" minWidth="10.0" prefWidth="831.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="560.0" minWidth="10.0" prefWidth="532.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <GridPane GridPane.columnIndex="1">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="152.0" minHeight="10.0" prefHeight="79.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="347.0" minHeight="10.0" prefHeight="347.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="222.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <GridPane GridPane.rowIndex="1">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="237.0" minWidth="10.0" prefWidth="237.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="521.0" minWidth="10.0" prefWidth="361.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="267.0" minWidth="10.0" prefWidth="233.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <ImageView fitHeight="256.0" fitWidth="266.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                                       <image>
+                                          <Image url="@../images/questionmark.png" />
+                                       </image>
+                                       <GridPane.margin>
+                                          <Insets left="50.0" />
+                                       </GridPane.margin>
+                                    </ImageView>
+                                    <GridPane GridPane.columnIndex="1">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="127.0" minWidth="10.0" prefWidth="126.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="181.0" minWidth="10.0" prefWidth="76.3333740234375" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="141.0" minWidth="10.0" prefWidth="127.6666259765625" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="98.0" minHeight="10.0" prefHeight="98.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="163.0" minHeight="10.0" prefHeight="139.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="110.0" minHeight="10.0" prefHeight="90.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="QUESTION" size="170" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </GridPane>
+                              <ImageView fitHeight="11.0" fitWidth="462.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                                 <image>
+                                    <Image url="@../images/hrule.png" />
+                                 </image>
+                                 <GridPane.margin>
+                                    <Insets left="210.0" />
+                                 </GridPane.margin>
+                              </ImageView>
+                              <GridPane>
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.33331298828125" minWidth="7.0" prefWidth="62.33331298828125" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="335.3333740234375" minWidth="10.0" prefWidth="318.66668701171875" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="172.33331298828125" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="343.0" minWidth="10.0" prefWidth="331.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="117.3333740234375" minWidth="10.0" prefWidth="61.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <ImageView fx:id="firstStep" fitHeight="85.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/circle1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="lastStep" fitHeight="85.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4">
+                                       <image>
+                                          <Image url="@../images/circle2.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="secondStep" fitHeight="65.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                                       <image>
+                                          <Image url="@../images/circle2.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="firstBar" fitHeight="61.0" fitWidth="326.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                                       <image>
+                                          <Image url="@../images/rectangle2.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="secondBar" fitHeight="70.0" fitWidth="334.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+                                       <image>
+                                          <Image url="@../images/rectangle2.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="firstStep1" fitHeight="85.0" fitWidth="64.0" layoutX="10.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                       <image>
+                                          <Image url="@../images/circle3.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="firstBar1" fitHeight="61.0" fitWidth="326.0" layoutX="72.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="1">
+                                       <image>
+                                          <Image url="@../images/rectangle1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="secondStep1" fitHeight="65.0" fitWidth="59.0" layoutX="391.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="2">
+                                       <image>
+                                          <Image url="@../images/circle3.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="secondBar1" fitHeight="70.0" fitWidth="334.0" layoutX="449.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="3">
+                                       <image>
+                                          <Image url="@../images/rectangle1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="lastStep1" fitHeight="85.0" fitWidth="64.0" layoutX="780.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="4">
+                                       <image>
+                                          <Image url="@../images/circle1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="lastStep2" fitHeight="85.0" fitWidth="64.0" layoutX="780.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="4">
+                                       <image>
+                                          <Image url="@../images/circle3.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="secondStep2" fitHeight="65.0" fitWidth="59.0" layoutX="391.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="2">
+                                       <image>
+                                          <Image url="@../images/circle1.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.rowIndex="2">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="630.0" minWidth="10.0" prefWidth="541.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1025.0" minWidth="10.0" prefWidth="834.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="545.0" minWidth="10.0" prefWidth="537.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <GridPane GridPane.columnIndex="1">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label alignment="CENTER" prefHeight="66.0" prefWidth="845.0" text="Please fill in your reference code">
+                                 <font>
+                                    <Font size="42.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="51.0" prefWidth="842.0" text="in order to check on your luggage status" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </Label>
+                              <GridPane GridPane.rowIndex="2">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="269.0" minWidth="10.0" prefWidth="97.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="465.0" minWidth="10.0" prefWidth="461.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <TextField id="referenceCodeInput" fx:id="submitReferenceCode" onAction="#statusCheckNextAction" promptText="Reference code" GridPane.columnIndex="1" />
+                                    <Label fx:id="referenceCodeWarning" alignment="CENTER" prefHeight="21.0" prefWidth="468.0" textFill="RED" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="System Bold" size="24.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane GridPane.rowIndex="3">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Button fx:id="submitCheck" minHeight="50.0" minWidth="200.0" mnemonicParsing="false" onAction="#statusCheckNextAction" text="Submit" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                                       <GridPane.margin>
+                                          <Insets />
+                                       </GridPane.margin>
+                                    </Button>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+      <GridPane id="statusCheckRef" fx:id="gridFoundLuggage" layoutX="1146.0" layoutY="395.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="524.0" minHeight="7.0" prefHeight="7.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1073.0" minHeight="10.0" prefHeight="1073.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d81e05" height="8.0" stroke="#d81e05" strokeType="INSIDE" strokeWidth="0.0" width="1600.0" />
+            <GridPane style="-fx-background-color: #ffffff;" GridPane.rowIndex="1">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="337.0" minHeight="10.0" prefHeight="187.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="547.0" minHeight="10.0" prefHeight="484.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="381.0" minHeight="10.0" prefHeight="326.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <GridPane prefHeight="285.0" prefWidth="1920.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="718.0" minWidth="10.0" prefWidth="506.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1067.0" minWidth="10.0" prefWidth="987.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="427.0" minWidth="10.0" prefWidth="427.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <ImageView fitHeight="71.0" fitWidth="464.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/download.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets bottom="50.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <GridPane GridPane.columnIndex="2">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="347.3333740234375" minWidth="10.0" prefWidth="244.6666259765625" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="205.0" minWidth="10.0" prefWidth="76.3333740234375" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="88.33332824707031" minHeight="10.0" prefHeight="20.000001907348633" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="128.33333587646484" minHeight="10.0" prefHeight="52.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="125.0" minHeight="10.0" prefHeight="90.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <ImageView fitHeight="71.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <image>
+                                    <Image url="@../images/helpBtn.png" />
+                                 </image>
+                              </ImageView>
+                              <Button id="helpBtnScreen" mnemonicParsing="false" onAction="#showFaqScreen" prefHeight="69.0" prefWidth="71.0" stylesheets="@../styles/statuscheckcode.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="QUESTION" size="30" />
+                                 </graphic></Button>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.rowIndex="1">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="630.0" minWidth="10.0" prefWidth="534.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="831.0" minWidth="10.0" prefWidth="831.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="560.0" minWidth="10.0" prefWidth="532.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <GridPane GridPane.columnIndex="1">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="152.0" minHeight="10.0" prefHeight="79.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="347.0" minHeight="10.0" prefHeight="347.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="222.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <GridPane GridPane.rowIndex="1">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="237.0" minWidth="10.0" prefWidth="237.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="521.0" minWidth="10.0" prefWidth="361.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="267.0" minWidth="10.0" prefWidth="233.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <ImageView fitHeight="256.0" fitWidth="266.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                                       <image>
+                                          <Image url="@../images/found.png" />
+                                       </image>
+                                       <GridPane.margin>
+                                          <Insets left="50.0" />
+                                       </GridPane.margin>
+                                    </ImageView>
+                                    <ImageView fx:id="notFoundIcon" fitHeight="256.0" fitWidth="266.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="1">
+                                       <image>
+                                          <Image url="@../images/notfound.png" />
+                                       </image>
+                                       <GridPane.margin>
+                                          <Insets left="50.0" />
+                                       </GridPane.margin>
+                                    </ImageView>
+                                    <GridPane GridPane.columnIndex="1">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="127.0" minWidth="10.0" prefWidth="93.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="181.0" minWidth="10.0" prefWidth="156.6666259765625" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="141.0" minWidth="10.0" prefWidth="89.3333740234375" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="98.0" minHeight="10.0" prefHeight="98.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="163.0" minHeight="10.0" prefHeight="139.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="110.0" minHeight="10.0" prefHeight="90.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <FontAwesomeIconView fx:id="faIconFound" fill="WHITE" glyphName="CHECK" size="170" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <FontAwesomeIconView fx:id="faIconNotFound" fill="WHITE" glyphName="CLOSE" size="180" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                             <GridPane.margin>
+                                                <Insets left="10.0" />
+                                             </GridPane.margin>
+                                          </FontAwesomeIconView>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </GridPane>
+                              <ImageView fitHeight="11.0" fitWidth="462.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                                 <image>
+                                    <Image url="@../images/hrule.png" />
+                                 </image>
+                                 <GridPane.margin>
+                                    <Insets left="210.0" />
+                                 </GridPane.margin>
+                              </ImageView>
+                              <GridPane>
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.33331298828125" minWidth="7.0" prefWidth="62.33331298828125" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="335.3333740234375" minWidth="10.0" prefWidth="318.66668701171875" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="172.33331298828125" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="343.0" minWidth="10.0" prefWidth="331.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="117.3333740234375" minWidth="10.0" prefWidth="61.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <ImageView fx:id="firstStep11" fitHeight="85.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/circle3.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="lastStep3" fitHeight="85.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4">
+                                       <image>
+                                          <Image url="@../images/circle2.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="secondStep3" fitHeight="65.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                                       <image>
+                                          <Image url="@../images/circle1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="firstBar2" fitHeight="15.0" fitWidth="307.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                                       <image>
+                                          <Image url="@../images/rectangle1.png" />
+                                       </image>
+                                       <GridPane.margin>
+                                          <Insets left="5.0" />
+                                       </GridPane.margin>
+                                    </ImageView>
+                                    <ImageView fx:id="secondBar2" fitHeight="17.0" fitWidth="327.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+                                       <image>
+                                          <Image url="@../images/rectangle2.png" />
+                                       </image>
+                                       <GridPane.margin>
+                                          <Insets left="5.0" />
+                                       </GridPane.margin>
+                                    </ImageView>
+                                    <Button id="progressBarBtn" mnemonicParsing="false" onAction="#backToFirstStatusCheck" prefHeight="60.0" prefWidth="62.0" stylesheets="@../styles/statuscheckcode.css" />
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.rowIndex="2">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="630.0" minWidth="10.0" prefWidth="333.6666564941406" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1255.333251953125" minWidth="10.0" prefWidth="1255.333251953125" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="545.0" minWidth="10.0" prefWidth="331.666748046875" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <GridPane GridPane.columnIndex="1">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label fx:id="textLuggageFound" alignment="CENTER" prefHeight="66.0" prefWidth="1258.0" text="Your luggage has been found">
+                                 <font>
+                                    <Font name="System Bold" size="42.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="textFoundLocation" alignment="CENTER" prefHeight="51.0" prefWidth="1278.0" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="27.0" />
+                                 </font>
+                              </Label>
+                              <GridPane GridPane.rowIndex="2">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="269.0" minWidth="10.0" prefWidth="97.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="897.0" minWidth="10.0" prefWidth="886.3333740234375" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="513.0" minWidth="10.0" prefWidth="99.6666259765625" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <GridPane GridPane.columnIndex="1">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="352.0" minWidth="10.0" prefWidth="350.66668701171875" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="341.666748046875" minWidth="10.0" prefWidth="199.33331298828125" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="347.0" minWidth="10.0" prefWidth="347.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Button id="submitCheck" fx:id="continueToPickup" minHeight="50.0" minWidth="200.0" mnemonicParsing="false" onAction="#statusCheckSelectAction" stylesheets="@../styles/statuscheckcode.css" text="Continue" GridPane.columnIndex="1">
+                                             <GridPane.margin>
+                                                <Insets />
+                                             </GridPane.margin>
+                                          </Button>
+                                          <Button id="submitCheck" fx:id="notFoundReturnHome" layoutX="360.0" layoutY="34.0" minHeight="50.0" minWidth="200.0" mnemonicParsing="false" onAction="#statusCheckReturnHome" stylesheets="@../styles/statuscheckcode.css" text="Return to home" visible="false" GridPane.columnIndex="1" />
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </GridPane>
+                              <GridPane GridPane.rowIndex="3">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+      <GridPane id="statusCheckRef" fx:id="gridPickupLocation" layoutX="1146.0" layoutY="395.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="524.0" minHeight="6.000002384185791" prefHeight="6.000002384185791" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1073.9999976158142" minHeight="10.0" prefHeight="1073.9999976158142" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d81e05" height="8.0" stroke="#d81e05" strokeType="INSIDE" strokeWidth="0.0" width="1600.0" />
+            <GridPane style="-fx-background-color: #ffffff;" GridPane.rowIndex="1">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="337.0" minHeight="10.0" prefHeight="187.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="547.0" minHeight="10.0" prefHeight="484.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="381.0" minHeight="10.0" prefHeight="326.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <GridPane prefHeight="285.0" prefWidth="1920.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="718.0" minWidth="10.0" prefWidth="506.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1067.0" minWidth="10.0" prefWidth="987.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="427.0" minWidth="10.0" prefWidth="427.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <ImageView fitHeight="71.0" fitWidth="464.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/download.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets bottom="50.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <GridPane GridPane.columnIndex="2">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="347.3333740234375" minWidth="10.0" prefWidth="244.6666259765625" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="205.0" minWidth="10.0" prefWidth="76.3333740234375" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="88.33332824707031" minHeight="10.0" prefHeight="20.000001907348633" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="128.33333587646484" minHeight="10.0" prefHeight="50.66666793823242" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="125.0" minHeight="10.0" prefHeight="91.33333206176758" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <ImageView fitHeight="71.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <image>
+                                    <Image url="@../images/helpBtn.png" />
+                                 </image>
+                              </ImageView>
+                              <Button id="helpBtnScreen" mnemonicParsing="false" onAction="#showFaqScreen" prefHeight="69.0" prefWidth="71.0" stylesheets="@../styles/statuscheckcode.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="QUESTION" size="30" />
+                                 </graphic></Button>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.rowIndex="1">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="630.0" minWidth="10.0" prefWidth="534.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="831.0" minWidth="10.0" prefWidth="831.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="560.0" minWidth="10.0" prefWidth="532.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <GridPane GridPane.columnIndex="1">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="152.0" minHeight="10.0" prefHeight="79.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="347.0" minHeight="10.0" prefHeight="347.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="222.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <GridPane GridPane.rowIndex="1">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="237.0" minWidth="10.0" prefWidth="237.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="521.0" minWidth="10.0" prefWidth="361.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="267.0" minWidth="10.0" prefWidth="233.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <ImageView fx:id="pickupIcon" fitHeight="256.0" fitWidth="266.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                                       <image>
+                                          <Image url="@../images/locationIcon.png" />
+                                       </image>
+                                       <GridPane.margin>
+                                          <Insets left="50.0" />
+                                       </GridPane.margin>
+                                    </ImageView>
+                                    <ImageView fx:id="confirmEmailIcon" fitHeight="256.0" fitWidth="266.0" layoutX="297.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="1">
+                                       <image>
+                                          <Image url="@../images/confirmmail.png" />
+                                       </image>
+                                       <GridPane.margin>
+                                          <Insets left="50.0" />
+                                       </GridPane.margin>
+                                    </ImageView>
+                                    <GridPane GridPane.columnIndex="1">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="132.66668701171875" minWidth="10.0" prefWidth="127.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="181.0" minWidth="10.0" prefWidth="95.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="141.0" minWidth="10.0" prefWidth="106.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="98.0" minHeight="10.0" prefHeight="98.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="163.0" minHeight="10.0" prefHeight="139.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="110.0" minHeight="10.0" prefHeight="90.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="MAP_MARKER" size="170" text="" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </GridPane>
+                              <ImageView fitHeight="11.0" fitWidth="462.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                                 <image>
+                                    <Image url="@../images/hrule.png" />
+                                 </image>
+                                 <GridPane.margin>
+                                    <Insets left="210.0" />
+                                 </GridPane.margin>
+                              </ImageView>
+                              <GridPane>
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.33331298828125" minWidth="7.0" prefWidth="62.33331298828125" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="335.3333740234375" minWidth="10.0" prefWidth="318.66668701171875" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="172.33331298828125" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="343.0" minWidth="10.0" prefWidth="331.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="117.3333740234375" minWidth="10.0" prefWidth="61.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <ImageView fx:id="circle1Location" fitHeight="85.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/circle3.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="circle3Location" fitHeight="85.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4">
+                                       <image>
+                                          <Image url="@../images/circle1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="circle2Location" fitHeight="65.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                                       <image>
+                                          <Image url="@../images/circle3.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="bar1Location" fitHeight="15.0" fitWidth="308.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                                       <image>
+                                          <Image url="@../images/rectangle1.png" />
+                                       </image>
+                                       <GridPane.margin>
+                                          <Insets left="5.0" />
+                                       </GridPane.margin>
+                                    </ImageView>
+                                    <ImageView fx:id="bar2Location" fitHeight="16.0" fitWidth="325.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+                                       <image>
+                                          <Image url="@../images/rectangle1.png" />
+                                       </image>
+                                       <GridPane.margin>
+                                          <Insets left="5.0" />
+                                       </GridPane.margin>
+                                    </ImageView>
+                                    <ImageView fx:id="circle4Location" fitHeight="85.0" fitWidth="64.0" layoutX="780.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="4">
+                                       <image>
+                                          <Image url="@../images/circle1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button id="progressBarBtn" mnemonicParsing="false" onAction="#backToFirstStatusCheck2" prefHeight="60.0" prefWidth="62.0" stylesheets="@../styles/statuscheckcode.css" />
+                                    <Button id="progressBarBtn" mnemonicParsing="false" onAction="#backToFoundLuggage" prefHeight="60.0" prefWidth="62.0" stylesheets="@../styles/statuscheckcode.css" GridPane.columnIndex="2" />
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.rowIndex="2">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="630.0" minWidth="10.0" prefWidth="541.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1025.0" minWidth="10.0" prefWidth="834.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="545.0" minWidth="10.0" prefWidth="537.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <GridPane GridPane.columnIndex="1">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label alignment="CENTER" prefHeight="66.0" prefWidth="845.0" text="Pick-up &amp; Delivery Luggage">
+                                 <font>
+                                    <Font size="42.0" />
+                                 </font>
+                              </Label>
+                              <GridPane GridPane.rowIndex="2">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="269.0" minWidth="10.0" prefWidth="97.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="465.0" minWidth="10.0" prefWidth="461.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Button id="submitCheck" minHeight="50.0" minWidth="200.0" mnemonicParsing="false" onAction="#pickupLocationConfirm" stylesheets="@../styles/statuscheckcode.css" text="Submit" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                                       <GridPane.margin>
+                                          <Insets />
+                                       </GridPane.margin>
+                                    </Button>
+                                 </children>
+                              </GridPane>
+                              <GridPane GridPane.rowIndex="3">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                              <GridPane GridPane.rowIndex="1">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="272.33331298828125" minWidth="10.0" prefWidth="203.3333740234375" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="415.6666259765625" minWidth="10.0" prefWidth="415.6666259765625" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="228.3333740234375" minWidth="10.0" prefWidth="203.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <ChoiceBox fx:id="choiceboxPickup" prefHeight="31.0" prefWidth="421.0" stylesheets="@../styles/statuscheckcode.css" value="2 minutes" GridPane.columnIndex="1" />
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+      <GridPane id="statusCheckRef" fx:id="gridConfirmLuggage" layoutX="1146.0" layoutY="395.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="524.0" minHeight="8.666664123535156" prefHeight="8.666664123535156" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1071.3333358764648" minHeight="10.0" prefHeight="1071.3333358764648" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d81e05" height="8.0" stroke="#d81e05" strokeType="INSIDE" strokeWidth="0.0" width="1600.0" />
+            <GridPane style="-fx-background-color: #ffffff;" GridPane.rowIndex="1">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="337.0" minHeight="10.0" prefHeight="187.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="547.0" minHeight="10.0" prefHeight="484.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="381.0" minHeight="10.0" prefHeight="326.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <GridPane prefHeight="285.0" prefWidth="1920.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="718.0" minWidth="10.0" prefWidth="506.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1067.0" minWidth="10.0" prefWidth="987.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="427.0" minWidth="10.0" prefWidth="427.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <ImageView fitHeight="71.0" fitWidth="464.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/download.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets bottom="50.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <GridPane GridPane.columnIndex="2">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="364.3333740234375" minWidth="10.0" prefWidth="245.3333740234375" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="205.0" minWidth="10.0" prefWidth="75.6666259765625" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="88.33332824707031" minHeight="10.0" prefHeight="20.000001907348633" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="128.33333587646484" minHeight="10.0" prefHeight="50.666664123535156" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="125.0" minHeight="10.0" prefHeight="90.33333587646484" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <ImageView fitHeight="71.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <image>
+                                    <Image url="@../images/helpBtn.png" />
+                                 </image>
+                              </ImageView>
+                              <Button id="helpBtnScreen" mnemonicParsing="false" onAction="#showFaqScreen" prefHeight="69.0" prefWidth="71.0" stylesheets="@../styles/statuscheckcode.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="QUESTION" size="30" />
+                                 </graphic></Button>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.rowIndex="1">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="630.0" minWidth="10.0" prefWidth="534.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="831.0" minWidth="10.0" prefWidth="831.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="560.0" minWidth="10.0" prefWidth="532.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <GridPane GridPane.columnIndex="1">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="152.0" minHeight="10.0" prefHeight="79.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="347.0" minHeight="10.0" prefHeight="347.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="222.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <GridPane GridPane.rowIndex="1">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="237.0" minWidth="10.0" prefWidth="237.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="521.0" minWidth="10.0" prefWidth="361.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="267.0" minWidth="10.0" prefWidth="233.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <ImageView fx:id="pickupIcon1" fitHeight="256.0" fitWidth="266.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                                       <image>
+                                          <Image url="@../images/confirmmail.png" />
+                                       </image>
+                                       <GridPane.margin>
+                                          <Insets left="50.0" />
+                                       </GridPane.margin>
+                                    </ImageView>
+                                    <ImageView fx:id="confirmEmailIcon1" fitHeight="256.0" fitWidth="266.0" layoutX="297.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="1">
+                                       <image>
+                                          <Image url="@../images/confirmmail.png" />
+                                       </image>
+                                       <GridPane.margin>
+                                          <Insets left="50.0" />
+                                       </GridPane.margin>
+                                    </ImageView>
+                                    <GridPane GridPane.columnIndex="1">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="127.0" minWidth="10.0" prefWidth="117.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="181.0" minWidth="10.0" prefWidth="124.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="141.0" minWidth="10.0" prefWidth="98.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="98.0" minHeight="10.0" prefHeight="98.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="163.0" minHeight="10.0" prefHeight="139.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="110.0" minHeight="10.0" prefHeight="90.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="ENVELOPE" size="120" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </GridPane>
+                              <ImageView fitHeight="11.0" fitWidth="462.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                                 <image>
+                                    <Image url="@../images/hrule.png" />
+                                 </image>
+                                 <GridPane.margin>
+                                    <Insets left="210.0" />
+                                 </GridPane.margin>
+                              </ImageView>
+                              <GridPane>
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.33331298828125" minWidth="7.0" prefWidth="62.33331298828125" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="335.3333740234375" minWidth="10.0" prefWidth="318.66668701171875" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="172.33331298828125" minWidth="10.0" prefWidth="58.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="343.0" minWidth="10.0" prefWidth="331.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="117.3333740234375" minWidth="10.0" prefWidth="61.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <ImageView fx:id="circle1Location1" fitHeight="85.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/circle3.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="circle3Location1" fitHeight="85.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4">
+                                       <image>
+                                          <Image url="@../images/circle3.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="circle2Location1" fitHeight="65.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                                       <image>
+                                          <Image url="@../images/circle3.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="bar1Location1" fitHeight="16.0" fitWidth="314.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                                       <image>
+                                          <Image url="@../images/rectangle1.png" />
+                                       </image>
+                                       <GridPane.margin>
+                                          <Insets left="2.0" />
+                                       </GridPane.margin>
+                                    </ImageView>
+                                    <ImageView fx:id="bar2Location1" fitHeight="16.0" fitWidth="322.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+                                       <image>
+                                          <Image url="@../images/rectangle1.png" />
+                                       </image>
+                                       <GridPane.margin>
+                                          <Insets left="5.0" />
+                                       </GridPane.margin>
+                                    </ImageView>
+                                    <ImageView fx:id="circle4Location1" fitHeight="85.0" fitWidth="64.0" layoutX="780.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="4">
+                                       <image>
+                                          <Image url="@../images/circle1.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.rowIndex="2">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="630.0" minWidth="10.0" prefWidth="541.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1025.0" minWidth="10.0" prefWidth="834.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="545.0" minWidth="10.0" prefWidth="537.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <GridPane GridPane.columnIndex="1">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label alignment="CENTER" prefHeight="66.0" prefWidth="845.0" text="Your pick-up location has been confirmed">
+                                 <font>
+                                    <Font size="36.0" />
+                                 </font>
+                              </Label>
+                              <GridPane GridPane.rowIndex="2">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="269.0" minWidth="10.0" prefWidth="97.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="465.0" minWidth="10.0" prefWidth="461.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Button id="submitCheck" minHeight="50.0" minWidth="200.0" mnemonicParsing="false" onAction="#statusCheckReturnHome" stylesheets="@../styles/statuscheckcode.css" text="Return to home" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                                       <GridPane.margin>
+                                          <Insets />
+                                       </GridPane.margin>
+                                    </Button>
+                                 </children>
+                              </GridPane>
+                              <GridPane GridPane.rowIndex="3">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                              <GridPane GridPane.rowIndex="1">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="272.33331298828125" minWidth="10.0" prefWidth="91.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="650.6666259765625" minWidth="10.0" prefWidth="650.6666259765625" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="228.3333740234375" minWidth="10.0" prefWidth="91.3333740234375" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="66.0" prefWidth="671.0" text="An e-mail has been sent explaining everything in futher detail" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font size="22.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+      <GridPane id="statusCheckRef" fx:id="gridFaqScreen" layoutX="10.0" layoutY="10.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="524.0" minHeight="8.666664123535156" prefHeight="8.666664123535156" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1071.3333358764648" minHeight="10.0" prefHeight="1071.3333358764648" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button id="buttonTransparentSub" mnemonicParsing="false" prefHeight="900.0" prefWidth="1600.0" stylesheets="@../styles/generalStyleSheet.css" GridPane.rowIndex="1" />
+            <GridPane prefHeight="900.0" prefWidth="1600.0" GridPane.rowIndex="1">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1025.0" minWidth="10.0" prefWidth="486.0" />
+                  <ColumnConstraints maxWidth="1420.0" minWidth="356.0" prefWidth="948.0" />
+                  <ColumnConstraints maxWidth="866.0" minWidth="10.0" prefWidth="486.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="760.0" minHeight="10.0" prefHeight="182.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="800.0" minHeight="10.0" prefHeight="682.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1002.0" minHeight="10.0" prefHeight="206.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="578.0" minWidth="10.0" prefWidth="34.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="563.0" minWidth="10.0" prefWidth="557.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="342.0" minWidth="10.0" prefWidth="36.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="192.0" minHeight="0.0" prefHeight="75.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="528.0" minHeight="10.0" prefHeight="504.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="106.0" minHeight="10.0" prefHeight="82.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="680.0" strokeType="INSIDE" width="668.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                           <effect>
+                              <DropShadow color="#cbcbcb" />
+                           </effect>
+                        </Rectangle>
+                        <Accordion prefHeight="522.0" prefWidth="563.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <panes>
+                              <TitledPane animated="false" prefHeight="579.0" prefWidth="648.0" text="Verloren en/of beschadigde bagage">
+                                 <content>
+                                    <TextArea prefHeight="200.0" prefWidth="200.0" text="Indien uw bagage niet op de luchthaven bij aankomst aanwezig is, of als u de &#10;bagage beschadigd aantreft, dient er een PIR rapport opgemaakt te worden op &#10;de luchthaven. Dit rapport heeft u nodig voor de reisverzekering.&#10;&#10;Noch de luchtvaartmaatschappij noch Corendon is aansprakelijk voor het &#10;op een latere vlucht afleveren van uw bagage.&#10;&#10;Het is raadzaam om een reis- en/of annuleringsverzekering af te sluiten. &#10;In geval van schade of vertraging kunt u in sommige gevallen een &#10;beroep doen op de verzekering.&#10;" />
+                                 </content>
+                              </TitledPane>
+                              <TitledPane animated="false" text="Afwijkende bagage">
+                                 <content>
+                                    <TextArea prefHeight="200.0" prefWidth="200.0" text="Reist u met afwijkende bagage, dan kunt u deze online eenvoudig en snel &#10;aanmelden via fly.corendon.com. Log in met uw gegevens en selecteer onder &#10;het kopje ‘Afwijkende bagage en assistentie’ de afwijkende bagage &#10;die u aan wilt melden.&#10;&#10;U kunt ook een e-mail sturen naar bagage@corendon.nl, &#10;indien online aanmelden via fly.corendon.com niet lukt.&#10;" />
+                                 </content>
+                              </TitledPane>
+                              <TitledPane animated="false" text="Handbagage">
+                                 <content>
+                                    <TextArea prefHeight="200.0" prefWidth="200.0" text="Wanneer u met Corendon (Dutch) Airlines vliegt, mag u per persoon &#10;1 stuk handbagage van maximaal 7 kilo meenemen &#10;(maximale afmetingen 55 x 35 x 25 cm).&#10;&#10;Kijkt u voor meer informatie over het meenemen van bagage tijdens uw &#10;vlucht met Corendon (Dutch) Airlines of een andere luchtvaartmaatschappij &#10;op www.corendon.nl/bagage.&#10;" />
+                                 </content>
+                              </TitledPane>
+                              <TitledPane animated="false" text="Skibagage">
+                                 <content>
+                                    <TextArea prefHeight="200.0" prefWidth="200.0" text="Wanneer u 20 kilo ruimbagage bijboekt, wordt uw ski-uitrusting gratis vervoerd.&#10;&#10;De ski-uitrusting kan bestaan uit:&#10;1 paar ski’s /1 board&#10;1 paar schoenen&#10;Het maximale toegestane gewicht is totaal 15 kilo.&#10;" />
+                                 </content>
+                              </TitledPane>
+                              <TitledPane animated="false" text="Live Chat">
+                                 <content>
+                                    <TextArea prefHeight="200.0" prefWidth="200.0" text="De live chat is beschikbaar van maandag t/m vrijdag van &#10;09.00 uur ’s ochtends tot 18.00 uur ’s avonds.&#10;&#10;Via de live chat op de website kunt u in contact komen met een van &#10;onze reisadviseurs. Zodra zij beschikbaar zijn op de chat, ziet u aan de &#10;linkerkant van uw scherm een pop-up (venster) verschijnen. U kunt hier meteen &#10;uw vraag stellen en zo het chatgesprek beginnen.&#10;&#10;Wanneer het erg druk is op het Contact Center, kan het voorkomen dat onze &#10;reisadviseurs niet in de gelegenheid zijn u via de chat te woord te staan. &#10;In dit geval en buiten de genoemde tijden kunt u uiteraard ook telefonisch &#10;contact opnemen met ons Contact Center via telefoonnummer 023-7510606.&#10;" />
+                                 </content>
+                              </TitledPane>
+                           </panes>
+                        </Accordion>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Frequently Asked Questions" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Open Sans" size="24.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="closeButton" mnemonicParsing="false" onAction="#hideFaqScreen" text="X" GridPane.columnIndex="2" />
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

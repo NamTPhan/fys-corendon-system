@@ -1,0 +1,14 @@
+/* 
+*   Stylesheet for the option screen 
+*   Created on : 29-Oct-2017, 20:56:45
+*   Author: Nam
+*/
+
+#registerLostLuggage, #statusCheckLuggage {
+    -fx-background-color: #f89307;
+    /*-fx-background-color: linear-gradient(-135deg, #F1C40F 0%, #FF6800 100%);*/
+}
+
+#registerLostLuggage:hover, #statusCheckLuggage:hover{
+    -fx-background-color: #E18312;
+}

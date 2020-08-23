@@ -1,0 +1,1591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" stylesheets="@../../../../../../../../../../Downloads/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.clientsystem.RegisterLostLuggageController">
+    <children>
+        <AnchorPane fx:id="anchorPaneClient" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0">
+            <children>
+                <GridPane fx:id="gridPaneClient" prefHeight="900.0" prefWidth="1600.0" style="-fx-background-color: white;">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1920.0" minWidth="10.0" prefWidth="1920.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1920.0" minWidth="10.0" prefWidth="1920.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1920.0" minWidth="10.0" prefWidth="1920.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="346.0" minHeight="5.0" prefHeight="5.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="346.0" minHeight="0.0" prefHeight="86.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="911.0" minHeight="10.0" prefHeight="190.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="791.0" minHeight="10.0" prefHeight="83.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="644.6666564941406" minHeight="10.0" prefHeight="197.66665649414062" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="644.6666564941406" minHeight="10.0" prefHeight="89.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="683.3333129882812" minHeight="10.0" prefHeight="230.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="510.66668701171875" minHeight="10.0" prefHeight="217.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <GridPane alignment="CENTER_RIGHT" focusTraversable="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="640.0" GridPane.rowIndex="1">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <TextField fx:id="email_address" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="620.0" promptText="E-mail address" style="-fx-background-color: -fx-text-box-border, -fx-control-inner-background;" GridPane.halignment="CENTER" />
+                                    </children>
+                                </GridPane>
+                                <TextField fx:id="first_name" alignment="BASELINE_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="300.0" promptText="First name" style="-fx-background-color: -fx-text-box-border, -fx-control-inner-background;;" GridPane.halignment="CENTER">
+                           <GridPane.margin>
+                              <Insets left="50.0" />
+                           </GridPane.margin></TextField>
+                                <TextField fx:id="last_name" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="300.0" promptText="Last name" style="-fx-background-color: -fx-text-box-border, -fx-control-inner-background;" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                           <GridPane.margin>
+                              <Insets left="160.0" />
+                           </GridPane.margin></TextField>
+                                <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="640.0" GridPane.rowIndex="2">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <TextField fx:id="phone_number" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="620.0" promptText="Phone number" style="-fx-background-color: -fx-text-box-border, -fx-control-inner-background;" GridPane.halignment="CENTER" />
+                                    </children>
+                                </GridPane>
+                            </children>
+                        </GridPane>
+                        <GridPane GridPane.columnIndex="1" GridPane.rowIndex="6">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <GridPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="86.0" prefWidth="642.0">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <TextField fx:id="address_" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="620.0" promptText="Address" style="-fx-background-color: -fx-text-box-border, -fx-control-inner-background;" GridPane.halignment="CENTER" />
+                                    </children>
+                                </GridPane>
+                                <GridPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="82.0" prefWidth="641.0" GridPane.rowIndex="1">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <GridPane>
+                                            <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="311.0" minWidth="10.0" prefWidth="311.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="209.0" minWidth="10.0" prefWidth="24.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="306.0" minWidth="10.0" prefWidth="306.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                            <children>
+                                                <TextField fx:id="city_" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="290.0" promptText="City" style="-fx-background-color: -fx-text-box-border, -fx-control-inner-background;" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                                <TextField fx:id="state_" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="284.0" promptText="State" style="-fx-background-color: -fx-text-box-border, -fx-control-inner-background;" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                            </children>
+                                        </GridPane>
+                                    </children>
+                                </GridPane>
+                                <TextField fx:id="postal_code" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="286.0" promptText="Postal Code" style="-fx-background-color: -fx-text-box-border, -fx-control-inner-background;" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets right="-100.0" />
+                           </GridPane.margin></TextField>
+                                <ChoiceBox fx:id="choice_country" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="285.0" style="-fx-background-color: #FFF; -fx-border-color: #CCC;" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets right="-30.0" />
+                           </GridPane.margin></ChoiceBox>
+                            </children>
+                        </GridPane>
+                        <GridPane GridPane.columnIndex="1" GridPane.rowIndex="3">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                     <children>
+                        <Label style="-fx-font: 24px semibold, open sans;" text="Traveler information" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                           <GridPane.margin>
+                              <Insets left="40.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label style="-fx-font: 18px semibold, open sans;" text="step 1" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                           <GridPane.margin>
+                              <Insets bottom="20.0" left="10.0" top="-10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                           <image>
+                              <Image url="@../images/png/user-shape.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <Rectangle fill="#ffd34d" height="3.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="150.0" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </Rectangle>
+                     </children>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                        </GridPane>
+                        <Rectangle fill="#d81e05" height="5.0" strokeType="INSIDE" width="1600.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="TOP" />
+                        <Button mnemonicParsing="false" onAction="#moveToLabel" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: -fx-text-box-border, -fx-control-inner-background, #AAE14A; -fx-font: 18px semibold, open sans; -fx-text-fill: #ECF0F1; -fx-background-radius: 20px;" text="Continue" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+                     <GridPane.margin>
+                        <Insets left="300.0" />
+                     </GridPane.margin></Button>
+                        <Label fx:id="warningLabel1" alignment="CENTER" prefHeight="21.0" prefWidth="284.0" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="TOP">
+                     <GridPane.margin>
+                        <Insets left="100.0" />
+                     </GridPane.margin></Label>
+                        <GridPane prefHeight="225.0" prefWidth="444.0" GridPane.rowIndex="1">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="197.0" minWidth="0.0" prefWidth="0.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="512.0" minWidth="10.0" prefWidth="453.3333435058594" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="337.0" minWidth="10.0" prefWidth="68.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="337.0" minWidth="10.0" prefWidth="119.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints maxHeight="127.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="127.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="190.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="154.0" minHeight="0.0" prefHeight="14.666666507720947" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="153.0" minHeight="10.0" prefHeight="68.33333349227905" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                     <children>
+                        <ImageView fx:id="logo1" fitHeight="62.0" fitWidth="327.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+                           <image>
+                              <Image url="@../images/download.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets bottom="-20.0" left="10.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <Button id="homeBtn" fx:id="circleHomeBtn" minWidth="-Infinity" mnemonicParsing="false" onAction="#returnOptionScreen" prefHeight="63.0" prefWidth="66.0" stylesheets="@../styles/statuscheckcode.css" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                           <GridPane.margin>
+                              <Insets bottom="-40.0" left="-40.0" />
+                           </GridPane.margin></Button>
+                        <ImageView fitHeight="36.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                           <image>
+                              <Image url="@../images/png/home.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets bottom="-38.0" left="-46.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                     </children>
+                        </GridPane>
+                  <GridPane prefHeight="130.0" prefWidth="677.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="225.0" minWidth="10.0" prefWidth="200.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="248.0" minWidth="0.0" prefWidth="36.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="365.0" minWidth="10.0" prefWidth="235.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="437.0" minWidth="10.0" prefWidth="37.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="315.0" minWidth="10.0" prefWidth="132.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="19.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="129.0" minHeight="10.0" prefHeight="129.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="73.0" minHeight="10.0" prefHeight="18.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="257.0" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/rectangle2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="234.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/rectangle2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/circle2.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="-20.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="211.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/rectangle2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/circle2.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.columnIndex="2" GridPane.rowIndex="2">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="311.0" minWidth="10.0" prefWidth="121.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="587.0" minWidth="10.0" prefWidth="519.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <ImageView GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/circle2.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets right="-60.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.rowIndex="2">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="584.0" minWidth="10.0" prefWidth="529.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="531.0" minWidth="10.0" prefWidth="111.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <ImageView fitHeight="80.0" fitWidth="80.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/blueCircle1.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="-40.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+                  <Button mnemonicParsing="false" onAction="#returnOptionScreen" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: -fx-text-box-border, -fx-control-inner-background, #E74C3C; -fx-text-fill: #ECF0F1; -fx-font: 18px semibold, open sans; -fx-background-radius: 20px;" text="Back" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+                     <GridPane.margin>
+                        <Insets right="250.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <ImageView GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../images/helpBtn.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets right="10.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../images/Label.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets right="30.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <Button id="transparantBtn" mnemonicParsing="false" onAction="#showFaqScreen" prefHeight="51.0" prefWidth="53.0" stylesheets="@../styles/generalStyleSheet.css" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets right="10.0" />
+                     </GridPane.margin>
+                  </Button>
+                    </children>
+                </GridPane>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="anchorPaneLabel" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" visible="false">
+            <children>
+                <GridPane prefHeight="900.0" prefWidth="1600.0" style="-fx-background-color: white;">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1920.0" minWidth="10.0" prefWidth="1920.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1920.0" minWidth="10.0" prefWidth="1920.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1920.0" minWidth="10.0" prefWidth="1920.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="346.0" minHeight="0.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="346.0" minHeight="0.0" prefHeight="82.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="911.0" minHeight="10.0" prefHeight="160.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="791.0" minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="644.6666564941406" minHeight="10.0" prefHeight="172.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="644.6666564941406" minHeight="10.0" prefHeight="223.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="683.3333129882812" minHeight="10.0" prefHeight="103.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="510.66668701171875" minHeight="10.0" prefHeight="217.33331298828125" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                  <GridPane prefHeight="130.0" prefWidth="677.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="225.0" minWidth="10.0" prefWidth="200.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="248.0" minWidth="0.0" prefWidth="36.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="365.0" minWidth="10.0" prefWidth="235.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="437.0" minWidth="10.0" prefWidth="37.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="315.0" minWidth="10.0" prefWidth="132.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="19.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="129.0" minHeight="10.0" prefHeight="129.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="73.0" minHeight="10.0" prefHeight="18.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="245.0" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/rectangle3.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="234.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/rectangle2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/circle2.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="-20.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="211.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/rectangle2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/blueCircle1.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+                        <GridPane alignment="CENTER_RIGHT" focusTraversable="true" minHeight="-Infinity" minWidth="-Infinity" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="640.0" GridPane.rowIndex="1">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <TextField fx:id="flight_number" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="620.0" promptText="Flight number" style="-fx-background-color: -fx-text-box-border, -fx-control-inner-background;" GridPane.halignment="CENTER" />
+                                    </children>
+                                </GridPane>
+                                <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="640.0" GridPane.rowIndex="2">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <TextField fx:id="destination_" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="620.0" promptText="Destination" style="-fx-background-color: -fx-text-box-border, -fx-control-inner-background;" GridPane.halignment="CENTER" />
+                                    </children>
+                                </GridPane>
+                                <GridPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="51.0" prefWidth="641.0">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <TextField fx:id="label_number" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="620.0" promptText="Label number" style="-fx-background-color: -fx-text-box-border, -fx-control-inner-background;" GridPane.halignment="CENTER" />
+                                    </children>
+                                </GridPane>
+                            </children>
+                        </GridPane>
+                        <Button fx:id="button3" mnemonicParsing="false" onAction="#moveToLuggage" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: -fx-text-box-border, -fx-control-inner-background, #AAE14A; -fx-text-fill: #ECF0F1; -fx-font: 18px semibold, open sans; -fx-background-radius: 20px;" text="Continue" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+                     <GridPane.margin>
+                        <Insets left="250.0" />
+                     </GridPane.margin></Button>
+                        <Label fx:id="warningLabel2" alignment="CENTER" prefHeight="21.0" prefWidth="177.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="TOP">
+                     <GridPane.margin>
+                        <Insets left="100.0" />
+                     </GridPane.margin></Label>
+                        <Button fx:id="button2" mnemonicParsing="false" onAction="#backToTraveler" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: -fx-text-box-border, -fx-control-inner-background, #E74C3C; -fx-text-fill: #ECF0F1; -fx-font: 18px semibold, open sans; -fx-background-radius: 20px;" text="Back" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+                     <GridPane.margin>
+                        <Insets right="250.0" />
+                     </GridPane.margin></Button>
+                  <ImageView fx:id="logo11" fitHeight="62.0" fitWidth="327.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+                     <image>
+                        <Image url="@../images/download.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets bottom="-20.0" left="10.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <GridPane GridPane.rowIndex="2">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="543.0" minWidth="10.0" prefWidth="543.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="315.0" minWidth="10.0" prefWidth="97.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <ImageView GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/blueCircle3.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="-50.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.columnIndex="2" GridPane.rowIndex="2">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="315.0" minWidth="10.0" prefWidth="117.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="523.0" minWidth="10.0" prefWidth="523.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <ImageView GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/circle2.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets right="-60.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label style="-fx-font: 24px bold, open sans;" text="Label information" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                           <GridPane.margin>
+                              <Insets right="-10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label style="-fx-font: 18px semibold, open sans;" text="step 2" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                           <image>
+                              <Image url="@../images/png/tag-black-shape.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <Rectangle fill="#ffd34d" height="3.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="150.0" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="10.0" top="25.0" />
+                           </GridPane.margin>
+                        </Rectangle>
+                     </children>
+                  </GridPane>
+                  <ImageView GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../images/helpBtn.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets bottom="-10.0" right="10.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../images/Label.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets bottom="-5.0" right="30.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <Rectangle fill="#d81e05" height="5.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1600.0" GridPane.valignment="TOP" />
+                  <Label fx:id="warningNumberVal" alignment="CENTER" prefHeight="21.0" prefWidth="284.0" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="TOP">
+                     <GridPane.margin>
+                        <Insets top="20.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Button id="transparantBtn" mnemonicParsing="false" onAction="#showFaqScreen" prefHeight="51.0" prefWidth="53.0" stylesheets="@../styles/generalStyleSheet.css" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="-10.0" right="10.0" />
+                     </GridPane.margin>
+                  </Button>
+                    </children>
+                </GridPane>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="anchorPaneLuggage" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" visible="false">
+            <children>
+                <GridPane layoutX="-1.0" prefHeight="900.0" prefWidth="1600.0" style="-fx-background-color: white;">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1920.0" minWidth="10.0" prefWidth="1920.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1920.0" minWidth="10.0" prefWidth="1920.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1920.0" minWidth="10.0" prefWidth="1920.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="346.0" minHeight="0.0" prefHeight="7.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="346.0" minHeight="0.0" prefHeight="98.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="911.0" minHeight="10.0" prefHeight="153.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="791.0" minHeight="10.0" prefHeight="113.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="644.6666564941406" minHeight="10.0" prefHeight="183.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="644.6666564941406" minHeight="0.0" prefHeight="228.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="683.3333129882812" minHeight="10.0" prefHeight="85.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="510.66668701171875" minHeight="10.0" prefHeight="213.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <GridPane alignment="CENTER_RIGHT" focusTraversable="true" prefHeight="217.0" prefWidth="639.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="322.0" minWidth="10.0" prefWidth="320.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="323.0" minWidth="10.0" prefWidth="319.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="640.0" GridPane.rowIndex="1">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <TextField fx:id="brand_" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="620.0" promptText="brand" style="-fx-background-color: -fx-text-box-border, -fx-control-inner-background;" GridPane.halignment="CENTER" />
+                                    </children>
+                                </GridPane>
+                                <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="51.0" prefWidth="640.0" GridPane.rowIndex="2">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <TextArea fx:id="special_char" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="186.0" prefWidth="620.0" promptText="Special characterics" style="-fx-background-color: -fx-text-box-border, -fx-control-inner-background;" GridPane.halignment="CENTER" GridPane.valignment="TOP" GridPane.vgrow="ALWAYS" />
+                                    </children>
+                                </GridPane>
+                                <GridPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="51.0" prefWidth="641.0">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <TextField fx:id="type_" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="620.0" promptText="type" style="-fx-background-color: -fx-text-box-border, -fx-control-inner-background;" GridPane.halignment="CENTER" />
+                                    </children>
+                                </GridPane>
+                            </children>
+                        </GridPane>
+                        <ColorPicker fx:id="color_" disable="true" prefHeight="35.0" prefWidth="55.0" style="-fx-background-color: choice-box-border, -fx-control-inner-background;" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <effect>
+                        <Blend />
+                     </effect>
+                     <GridPane.margin>
+                        <Insets left="100.0" />
+                     </GridPane.margin></ColorPicker>
+                        <Button mnemonicParsing="false" onAction="#moveToSummary" prefHeight="40.0" prefWidth="200.0" style="-fx-font: 18px semibold, open sans; -fx-background-color: -fx-text-box-border, -fx-control-inner-background, #AAE14A; -fx-text-fill: #ECF0F1; -fx-background-radius: 20px;" text="Continue" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+                     <GridPane.margin>
+                        <Insets left="250.0" />
+                     </GridPane.margin></Button>
+                        <Button mnemonicParsing="false" onAction="#backToLabel" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: -fx-text-box-border, -fx-control-inner-background, #E74C3C; -fx-text-fill: #ECF0F1; -fx-font: 18px semibold, open sans; -fx-background-radius: 20px;" text="Back" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+                     <GridPane.margin>
+                        <Insets right="250.0" />
+                     </GridPane.margin></Button>
+                        <Label fx:id="warningLabel3" alignment="CENTER" prefHeight="21.0" prefWidth="273.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+                     <GridPane.margin>
+                        <Insets left="100.0" />
+                     </GridPane.margin></Label>
+                  <GridPane prefHeight="130.0" prefWidth="677.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="225.0" minWidth="10.0" prefWidth="200.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="248.0" minWidth="0.0" prefWidth="36.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="365.0" minWidth="10.0" prefWidth="235.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="437.0" minWidth="10.0" prefWidth="37.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="315.0" minWidth="10.0" prefWidth="132.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="19.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="129.0" minHeight="10.0" prefHeight="129.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="73.0" minHeight="10.0" prefHeight="18.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="245.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/rectangle3.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="211.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/rectangle2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="245.0" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/rectangle3.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/blueCircle3.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/blueCircle1.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.rowIndex="2">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="571.0" minWidth="10.0" prefWidth="551.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="307.0" minWidth="10.0" prefWidth="89.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <ImageView GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/blueCircle3.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="-50.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.columnIndex="2" GridPane.rowIndex="2">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="311.0" minWidth="10.0" prefWidth="119.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="558.0" minWidth="10.0" prefWidth="521.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <ImageView GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/circle2.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets right="-50.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="22.0" minHeight="7.0" prefHeight="22.0" />
+                        <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label style="-fx-font: 24px bold, open sans;" text="Luggage information" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                           <GridPane.margin>
+                              <Insets right="-50.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label style="-fx-font: 18px semibold, open sans;" text="step 3" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                           <image>
+                              <Image url="@../images/png/suitcase-with-white-details.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <Rectangle fill="#ffd34d" height="3.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="150.0" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="10.0" top="25.0" />
+                           </GridPane.margin>
+                        </Rectangle>
+                     </children>
+                  </GridPane>
+                  <ImageView GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../images/helpBtn.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets right="20.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../images/Label.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets right="40.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <Rectangle fill="#d81e05" height="5.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1600.0" GridPane.valignment="TOP" />
+                  <Button id="transparantBtn" mnemonicParsing="false" onAction="#showFaqScreen" prefHeight="51.0" prefWidth="53.0" stylesheets="@../styles/generalStyleSheet.css" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets right="20.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <TextField fx:id="colorString" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="101.0" promptText="Color" style="-fx-background-color: -fx-text-box-border, -fx-control-inner-background;" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets left="120.0" />
+                     </GridPane.margin>
+                  </TextField>
+                    </children>
+                </GridPane>
+            <ImageView fx:id="logo14" fitHeight="62.0" fitWidth="327.0" layoutX="10.0" layoutY="10.0">
+               <image>
+                  <Image url="@../images/download.png" />
+               </image>
+            </ImageView>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="anchorPaneSummary" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" visible="false">
+            <children>
+                <GridPane prefHeight="900.0" prefWidth="1600.0" style="-fx-background-color: white;">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1920.0" minWidth="10.0" prefWidth="546.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1920.0" minWidth="10.0" prefWidth="773.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1920.0" minWidth="10.0" prefWidth="603.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="346.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="346.0" minHeight="0.0" prefHeight="98.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="346.0" minHeight="0.0" prefHeight="127.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="791.0" minHeight="10.0" prefHeight="109.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="791.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="644.6666564941406" minHeight="10.0" prefHeight="221.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="644.6666564941406" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="644.6666564941406" minHeight="10.0" prefHeight="200.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="683.3333129882812" minHeight="10.0" prefHeight="228.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <GridPane GridPane.columnIndex="1" GridPane.rowIndex="5">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Label fx:id="fullnameSummary" prefHeight="21.0" prefWidth="109.0" text="Label">
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin></Label>
+                                <Label style="-fx-font: 15px Light, open sans; -fx-text-fill: gray;" text="Full name" GridPane.valignment="BOTTOM">
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin></Label>
+                                <Label fx:id="email_addressSummary" text="Label" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin></Label>
+                                <Label style="-fx-text-fill: gray;" text="E-mail address" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin></Label>
+                                <Label fx:id="phone_numberSummary" text="Label" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin></Label>
+                                <Label style="-fx-text-fill: gray;" text="Phone number" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin></Label>
+                                <Label fx:id="address_summary" text="Label" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin></Label>
+                                <Label style="-fx-text-fill: gray;" text="Address" GridPane.columnIndex="1" GridPane.valignment="BOTTOM">
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin></Label>
+                                <Label fx:id="postal_codeSummary" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin></Label>
+                                <Label style="-fx-text-fill: gray;" text="Postal code" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin></Label>
+                                <Label fx:id="state_summary" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin></Label>
+                                <Label style="-fx-text-fill: gray;" text="State" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin></Label>
+                                <Label fx:id="city_summary" text="Label" GridPane.columnIndex="2">
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin></Label>
+                                <Label style="-fx-text-fill: gray;" text="City" GridPane.columnIndex="2" GridPane.valignment="BOTTOM">
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin></Label>
+                                <Label fx:id="choice_countrySummary" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin></Label>
+                                <Label style="-fx-text-fill: gray;" text="Country" GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin></Label>
+                        <ImageView fitHeight="20.0" fitWidth="20.0">
+                           <image>
+                              <Image url="@../images/png/user-shape.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/png/envelope-of-white-paper.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@../images/png/telephone-handle-silhouette.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" GridPane.columnIndex="1">
+                           <image>
+                              <Image url="@../images/png/telephone%20book.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/png/map-marker.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@../images/png/map-4.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" GridPane.columnIndex="2">
+                           <image>
+                              <Image url="@../images/png/paper-push-pin.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/png/flag-black-shape.png" />
+                           </image>
+                        </ImageView>
+                            </children>
+                        </GridPane>
+                        <GridPane GridPane.columnIndex="1" GridPane.rowIndex="7">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Label fx:id="type_summary" text="Label">
+                           <GridPane.margin>
+                              <Insets left="50.0" />
+                           </GridPane.margin></Label>
+                                <Label style="-fx-text-fill: gray;" text="Type" GridPane.valignment="BOTTOM">
+                           <GridPane.margin>
+                              <Insets left="50.0" />
+                           </GridPane.margin></Label>
+                                <Label fx:id="brand_summary" text="Label" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="50.0" />
+                           </GridPane.margin></Label>
+                                <Label style="-fx-text-fill: gray;" text="Brand" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                           <GridPane.margin>
+                              <Insets left="50.0" />
+                           </GridPane.margin></Label>
+                                <Label fx:id="color_summary" text="Label" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets left="50.0" />
+                           </GridPane.margin></Label>
+                                <Label style="-fx-text-fill: gray;" text="Color" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                           <GridPane.margin>
+                              <Insets left="50.0" />
+                           </GridPane.margin></Label>
+                                <Label fx:id="label_numberSummary" text="Label" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                           <GridPane.margin>
+                              <Insets right="-5.0" />
+                           </GridPane.margin></Label>
+                                <Label fx:id="flight_numberSummary" text="Label" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets right="-5.0" />
+                           </GridPane.margin></Label>
+                                <Label style="-fx-text-fill: gray;" text="Flight number" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                           <GridPane.margin>
+                              <Insets left="50.0" />
+                           </GridPane.margin></Label>
+                                <Label fx:id="destination_summary" text="Label" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets right="-5.0" />
+                           </GridPane.margin></Label>
+                                <Label style="-fx-text-fill: gray;" text="Destination" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                           <GridPane.margin>
+                              <Insets left="35.0" />
+                           </GridPane.margin></Label>
+                                <Label fx:id="special_charSummary" text="Label" GridPane.columnIndex="2">
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin></Label>
+                                <Label style="-fx-text-fill: gray;" text="Extra information" GridPane.columnIndex="2" GridPane.valignment="BOTTOM">
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin></Label>
+                                <Label style="-fx-text-fill: gray;" text="Label number" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+                           <GridPane.margin>
+                              <Insets left="50.0" />
+                           </GridPane.margin></Label>
+                        <ImageView fitHeight="20.0" fitWidth="20.0">
+                           <image>
+                              <Image url="@../images/png/suitcase-with-white-details.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/png/copyright.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@../images/png/brush.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                           <image>
+                              <Image url="@../images/png/tag-black-shape.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets right="80.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/png/plane.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets right="80.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@../images/png/map-marker.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets right="80.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" GridPane.columnIndex="2">
+                           <image>
+                              <Image url="@../images/png/copy-document.png" />
+                           </image>
+                        </ImageView>
+                            </children>
+                        </GridPane>
+                        <GridPane GridPane.columnIndex="1" GridPane.rowIndex="4">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="20.0">
+                           <image>
+                              <Image url="@../images/png/user-shape.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </ImageView>
+                        <Label style="-fx-font: 18px bold, open sans;" text="Traveler information" GridPane.halignment="CENTER">
+                           <GridPane.margin>
+                              <Insets left="-90.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Rectangle fill="#ffd34d" height="3.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="650.0" GridPane.valignment="BOTTOM">
+                           <GridPane.margin>
+                              <Insets bottom="-10.0" />
+                           </GridPane.margin>
+                        </Rectangle>
+                     </children>
+                        </GridPane>
+                        <Button mnemonicParsing="false" onAction="#backToEdit" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: -fx-text-box-border, -fx-control-inner-background, #E74C3C; -fx-text-fill: #ECF0F1; -fx-font: 18px semibold, open sans; -fx-background-radius: 20px;" text="edit" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="8">
+                     <GridPane.margin>
+                        <Insets right="250.0" />
+                     </GridPane.margin></Button>
+                        <Button mnemonicParsing="false" onAction="#moveToConfirmation" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: -fx-text-box-border, -fx-control-inner-background, #AAE14A; -fx-text-fill: #ECF0F1; -fx-font: 18px semibold, open sans; -fx-background-radius: 20px;" text="submit" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets left="250.0" />
+                     </GridPane.margin></Button>
+                  <GridPane GridPane.rowIndex="1">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="428.0" minWidth="10.0" prefWidth="428.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="264.0" minWidth="10.0" prefWidth="117.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="93.00000381469727" minHeight="36.333335876464844" prefHeight="93.00000381469727" />
+                        <RowConstraints maxHeight="105.66666412353516" minHeight="14.999996185302734" prefHeight="14.999996185302734" />
+                    </rowConstraints>
+                     <children>
+                        <ImageView fx:id="logo13" fitHeight="61.0" fitWidth="327.0" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+                           <image>
+                              <Image url="@../images/download.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets bottom="-10.0" left="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+                  <GridPane prefHeight="130.0" prefWidth="677.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="225.0" minWidth="10.0" prefWidth="200.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="248.0" minWidth="0.0" prefWidth="36.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="365.0" minWidth="10.0" prefWidth="235.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="437.0" minWidth="10.0" prefWidth="37.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="315.0" minWidth="10.0" prefWidth="132.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="19.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="129.0" minHeight="10.0" prefHeight="129.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="73.0" minHeight="10.0" prefHeight="18.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="300.0" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/rectangle3.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="310.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/rectangle3.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="297.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/rectangle3.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/blueCircle3.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/blueCircle3.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+                  <ImageView GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+                     <image>
+                        <Image url="@../images/blueCircle3.png" />
+                     </image>
+                  </ImageView>
+                  <GridPane GridPane.columnIndex="2" GridPane.rowIndex="2">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="124.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="479.0" minWidth="10.0" prefWidth="479.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <ImageView GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/blueCircle1.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets right="-70.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label style="-fx-font: 24px bold, open sans;" text="Overview" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                           <GridPane.margin>
+                              <Insets bottom="10.0" right="150.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label style="-fx-font: 18px semibold, open sans;" text="step 4" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </Label>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                           <image>
+                              <Image url="@../images/png/listing-option.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <Rectangle fill="#ffd34d" height="3.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="150.0" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets top="25.0" />
+                           </GridPane.margin>
+                        </Rectangle>
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="383.0" minWidth="10.0" prefWidth="367.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="453.0" minWidth="10.0" prefWidth="405.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label style="-fx-font: 18px bold, open sans;" text="Label information" GridPane.halignment="CENTER">
+                           <GridPane.margin>
+                              <Insets bottom="-15.0" right="110.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Rectangle fill="#ffd34d" height="3.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" GridPane.valignment="BOTTOM">
+                           <GridPane.margin>
+                              <Insets bottom="-10.0" />
+                           </GridPane.margin>
+                        </Rectangle>
+                        <ImageView fitHeight="20.0" fitWidth="20.0">
+                           <image>
+                              <Image url="@../images/png/suitcase-with-white-details.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets top="15.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <Rectangle fill="#ffd34d" height="3.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="400.0" GridPane.columnIndex="1" GridPane.valignment="BOTTOM">
+                           <GridPane.margin>
+                              <Insets bottom="-10.0" left="-30.0" />
+                           </GridPane.margin>
+                        </Rectangle>
+                        <Label prefHeight="27.0" prefWidth="169.0" style="-fx-font: 18px bold, open sans;" text="Luggage information" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                           <GridPane.margin>
+                              <Insets bottom="-15.0" left="-180.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" GridPane.columnIndex="1">
+                           <image>
+                              <Image url="@../images/png/tag-black-shape.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets bottom="-15.0" left="-30.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+                  <ImageView GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../images/helpBtn.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets right="20.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../images/Label.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets right="40.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <Rectangle fill="#d81e05" height="5.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1920.0" />
+                  <Button id="transparantBtn" mnemonicParsing="false" onAction="#showFaqScreen" prefHeight="51.0" prefWidth="53.0" stylesheets="@../styles/generalStyleSheet.css" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets right="20.0" />
+                     </GridPane.margin>
+                  </Button>
+                    </children>
+                </GridPane>
+            </children>
+        </AnchorPane>
+      <AnchorPane fx:id="anchorPaneConfirmation" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" visible="false">
+         <children>
+            <GridPane fx:id="gridPaneClient1" prefHeight="900.0" prefWidth="1600.0" style="-fx-background-color: white;">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1920.0" minWidth="10.0" prefWidth="1920.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1920.0" minWidth="10.0" prefWidth="1920.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1920.0" minWidth="10.0" prefWidth="1920.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="346.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="346.0" minHeight="0.0" prefHeight="112.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="911.0" minHeight="10.0" prefHeight="156.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="791.0" minHeight="10.0" prefHeight="152.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="644.6666564941406" minHeight="10.0" prefHeight="395.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="683.3333129882812" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="510.66668701171875" minHeight="10.0" prefHeight="217.33331298828125" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <GridPane GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <Rectangle fill="#d81e05" height="5.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1600.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="TOP" />
+                  <GridPane>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="20.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="3.333333969116211" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <ImageView fx:id="logo12" fitHeight="62.0" fitWidth="327.0" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="TOP" GridPane.vgrow="ALWAYS">
+                           <image>
+                              <Image url="@../images/download.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+                  <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#backToHome" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: -fx-text-box-border, -fx-control-inner-background, #E74C3C; -fx-text-fill: #ECF0F1; -fx-font: 18px semibold, open sans; -fx-background-radius: 20px;" text="return to home" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+                  <Label fx:id="warningLabel11" alignment="CENTER" prefHeight="21.0" prefWidth="284.0" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="TOP" />
+                  <Label fx:id="confirmText1" prefHeight="35.0" prefWidth="487.0" style="-fx-font: 24px bold, open sans;" text="Your request has been successfully processed" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets top="100.0" />
+                     </GridPane.margin></Label>
+                  <GridPane prefHeight="130.0" prefWidth="677.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="225.0" minWidth="10.0" prefWidth="200.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="248.0" minWidth="0.0" prefWidth="36.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="365.0" minWidth="10.0" prefWidth="235.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="437.0" minWidth="10.0" prefWidth="37.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="315.0" minWidth="10.0" prefWidth="132.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="19.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="129.0" minHeight="10.0" prefHeight="129.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="73.0" minHeight="10.0" prefHeight="18.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="300.0" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/rectangle3.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="310.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/rectangle3.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="344.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/rectangle3.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/blueCircle3.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/blueCircle3.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.rowIndex="2">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="540.0" minWidth="10.0" prefWidth="540.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="305.0" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <ImageView GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/blueCircle3.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="-50.0" right="-10.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.columnIndex="2" GridPane.rowIndex="2">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="307.0" minWidth="10.0" prefWidth="161.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="524.0" minWidth="10.0" prefWidth="479.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <ImageView GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/blueCircle3.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets right="-40.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+                  <ImageView fx:id="emailConfirm2" fitWidth="196.0" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="TOP">
+                     <image>
+                        <Image url="@../images/confirmmail.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </ImageView>
+                  <Rectangle fill="#ffd34d" height="3.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="150.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets top="30.0" />
+                     </GridPane.margin>
+                  </Rectangle>
+                  <Label fx:id="confirmText2" style="-fx-font: 18px open sans;" text="A confirmation has been sent to your e-mail address" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets top="170.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <ImageView fx:id="checkLogo1" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="TOP">
+                     <image>
+                        <Image url="@../images/found.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="checkLogo2" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="TOP">
+                     <image>
+                        <Image url="@../images/Bitmap.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets top="30.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../images/helpBtn.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets right="20.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../images/Label.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets right="40.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView fx:id="emailConfirm1" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="TOP">
+                     <image>
+                        <Image url="@../images/Bitmap%20(1).png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets top="50.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <Button id="transparantBtn" mnemonicParsing="false" onAction="#showFaqScreen" prefHeight="51.0" prefWidth="53.0" stylesheets="@../styles/generalStyleSheet.css" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets right="20.0" />
+                     </GridPane.margin>
+                  </Button>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <GridPane id="statusCheckRef" fx:id="gridFaqScreen" layoutX="20.0" layoutY="20.0" prefHeight="900.0" prefWidth="1600.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="524.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1071.3333358764648" minHeight="10.0" prefHeight="900.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button id="buttonTransparentSub" mnemonicParsing="false" prefHeight="1082.0" prefWidth="1930.0" stylesheets="@../styles/generalStyleSheet.css" GridPane.rowIndex="1" />
+            <GridPane prefHeight="1090.0" prefWidth="1920.0" GridPane.rowIndex="1">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1025.0" minWidth="10.0" prefWidth="486.0" />
+                  <ColumnConstraints maxWidth="1420.0" minWidth="356.0" prefWidth="948.0" />
+                  <ColumnConstraints maxWidth="866.0" minWidth="10.0" prefWidth="486.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="760.0" minHeight="10.0" prefHeight="182.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="800.0" minHeight="10.0" prefHeight="682.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1002.0" minHeight="10.0" prefHeight="206.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="578.0" minWidth="10.0" prefWidth="34.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="563.0" minWidth="10.0" prefWidth="557.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="342.0" minWidth="10.0" prefWidth="36.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="192.0" minHeight="0.0" prefHeight="75.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="528.0" minHeight="10.0" prefHeight="504.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="106.0" minHeight="10.0" prefHeight="82.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="680.0" strokeType="INSIDE" width="668.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                           <effect>
+                              <DropShadow color="#cbcbcb" />
+                           </effect>
+                        </Rectangle>
+                        <Accordion prefHeight="522.0" prefWidth="563.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <panes>
+                              <TitledPane animated="false" prefHeight="579.0" prefWidth="648.0" text="Verloren en/of beschadigde bagage">
+                                 <content>
+                                    <TextArea prefHeight="200.0" prefWidth="200.0" text="Indien uw bagage niet op de luchthaven bij aankomst aanwezig is, of als u de &#10;bagage beschadigd aantreft, dient er een PIR rapport opgemaakt te worden op &#10;de luchthaven. Dit rapport heeft u nodig voor de reisverzekering.&#10;&#10;Noch de luchtvaartmaatschappij noch Corendon is aansprakelijk voor het &#10;op een latere vlucht afleveren van uw bagage.&#10;&#10;Het is raadzaam om een reis- en/of annuleringsverzekering af te sluiten. &#10;In geval van schade of vertraging kunt u in sommige gevallen een &#10;beroep doen op de verzekering.&#10;" />
+                                 </content>
+                              </TitledPane>
+                              <TitledPane animated="false" text="Afwijkende bagage">
+                                 <content>
+                                    <TextArea prefHeight="200.0" prefWidth="200.0" text="Reist u met afwijkende bagage, dan kunt u deze online eenvoudig en snel &#10;aanmelden via fly.corendon.com. Log in met uw gegevens en selecteer onder &#10;het kopje ‘Afwijkende bagage en assistentie’ de afwijkende bagage &#10;die u aan wilt melden.&#10;&#10;U kunt ook een e-mail sturen naar bagage@corendon.nl, &#10;indien online aanmelden via fly.corendon.com niet lukt.&#10;" />
+                                 </content>
+                              </TitledPane>
+                              <TitledPane animated="false" text="Handbagage">
+                                 <content>
+                                    <TextArea prefHeight="200.0" prefWidth="200.0" text="Wanneer u met Corendon (Dutch) Airlines vliegt, mag u per persoon &#10;1 stuk handbagage van maximaal 7 kilo meenemen &#10;(maximale afmetingen 55 x 35 x 25 cm).&#10;&#10;Kijkt u voor meer informatie over het meenemen van bagage tijdens uw &#10;vlucht met Corendon (Dutch) Airlines of een andere luchtvaartmaatschappij &#10;op www.corendon.nl/bagage.&#10;" />
+                                 </content>
+                              </TitledPane>
+                              <TitledPane animated="false" text="Skibagage">
+                                 <content>
+                                    <TextArea prefHeight="200.0" prefWidth="200.0" text="Wanneer u 20 kilo ruimbagage bijboekt, wordt uw ski-uitrusting gratis vervoerd.&#10;&#10;De ski-uitrusting kan bestaan uit:&#10;1 paar ski’s /1 board&#10;1 paar schoenen&#10;Het maximale toegestane gewicht is totaal 15 kilo.&#10;" />
+                                 </content>
+                              </TitledPane>
+                              <TitledPane animated="false" text="Live Chat">
+                                 <content>
+                                    <TextArea prefHeight="200.0" prefWidth="200.0" text="De live chat is beschikbaar van maandag t/m vrijdag van &#10;09.00 uur ’s ochtends tot 18.00 uur ’s avonds.&#10;&#10;Via de live chat op de website kunt u in contact komen met een van &#10;onze reisadviseurs. Zodra zij beschikbaar zijn op de chat, ziet u aan de &#10;linkerkant van uw scherm een pop-up (venster) verschijnen. U kunt hier meteen &#10;uw vraag stellen en zo het chatgesprek beginnen.&#10;&#10;Wanneer het erg druk is op het Contact Center, kan het voorkomen dat onze &#10;reisadviseurs niet in de gelegenheid zijn u via de chat te woord te staan. &#10;In dit geval en buiten de genoemde tijden kunt u uiteraard ook telefonisch &#10;contact opnemen met ons Contact Center via telefoonnummer 023-7510606.&#10;" />
+                                 </content>
+                              </TitledPane>
+                           </panes>
+                        </Accordion>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Frequently Asked Questions" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Open Sans" size="24.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="closeButton" mnemonicParsing="false" onAction="#hideFaqScreen" text="X" GridPane.columnIndex="2" />
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+    </children>
+</AnchorPane>

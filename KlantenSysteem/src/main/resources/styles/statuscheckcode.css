@@ -1,0 +1,35 @@
+/* 
+*   Stylescheet for al the status screens
+*   Created on : 29-Oct-2017, 20:38:09
+*   Author: Nam
+*/
+
+#submitCheck, #homeBtn{
+   -fx-font-size: 20px; 
+    -fx-background-color: #E74C3C; 
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 100px;
+    -fx-cursor: hand;
+}
+#submitCheck:hover, #homeBtn:hover{
+    -fx-font-size: 20px; 
+    -fx-background-color: #D43032; 
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 100px;
+    -fx-cursor: hand;
+}
+
+.choice-box {
+    -fx-background-color: #fff;
+    -fx-border-radius: 500px;
+    -fx-border-color: #cccccc;
+}
+
+.choice-box .context-menu {
+    -fx-pref-width: 500; /* Your width for the context menu background shown */
+}
+
+#progressBarBtn, #progressBarBtn:hover, #helpBtnScreen, #helpBtnScreen:hover {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="900.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.clientsystem.LandingScreenController">
+   <children>
+      <ImageView fitHeight="900.0" fitWidth="1600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../images/bg_login%20kopie.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d81e05" height="8.0" stroke="#d81e05" strokeType="INSIDE" strokeWidth="0.0" width="1600.0" />
+      <GridPane layoutX="1126.0" layoutY="375.0" prefHeight="900.0" prefWidth="1600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1025.0" minWidth="10.0" prefWidth="623.0" />
+            <ColumnConstraints maxWidth="1420.0" minWidth="356.0" prefWidth="676.0" />
+            <ColumnConstraints maxWidth="866.0" minWidth="10.0" prefWidth="622.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="760.0" minHeight="10.0" prefHeight="289.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="760.0" minHeight="10.0" prefHeight="626.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="1002.0" minHeight="10.0" prefHeight="249.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="350.0" strokeType="INSIDE" width="384.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <effect>
+                  <DropShadow color="#cbcbcb" />
+               </effect>
+            </Rectangle>
+            <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="141.0" minWidth="10.0" prefWidth="108.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="410.0" minWidth="10.0" prefWidth="384.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="192.0" minWidth="10.0" prefWidth="108.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="245.0" minHeight="10.0" prefHeight="243.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="224.0" minHeight="10.0" prefHeight="61.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="190.0" minHeight="1.0" prefHeight="21.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="305.0" minHeight="10.0" prefHeight="101.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="223.0" minHeight="10.0" prefHeight="175.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button id="selectLanguage" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="385.0" stylesheets="@../styles/landingScreenStyle.css" text="Select language" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="TOP">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </Button>
+                  <ImageView fitHeight="61.0" fitWidth="333.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+                     <image>
+                        <Image url="@../images/download.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ChoiceBox id="choicebox" fx:id="choicebox" prefHeight="50.0" prefWidth="335.0" stylesheets="@../styles/landingScreenStyle.css" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </ChoiceBox>
+                  <Line endX="150.0" startX="-100.0" stroke="#ffc61a" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Luggage World Tracking System" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="Montserrat Italic" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
