@@ -1,0 +1,38 @@
+#AnchorPane {
+    -fx-background-color: #fff;
+}
+
+.h2 {
+    -fx-text-fill: #485465;
+    -fx-font-size: 24;
+}
+.form .text {
+    -fx-fill: #ccc;
+    -fx-font-size: 12;
+}
+.btn.confirmBtn{
+    -fx-fill: #7cd400;
+}
+.declineBtn{
+    -fx-background-color: #EF5350;
+    -fx-cursor: hand;
+}
+.textField {
+    -fx-font-size: 14;
+    -fx-background-color: -fx-control-inner-background;
+    -fx-border-style: hidden hidden solid hidden;
+    -fx-max-width: 150;
+    -fx-border-color: #979797;
+    -fx-padding: 0;
+}
+
+.languageBtn {
+    -fx-font-weight: bold;
+    -fx-background-color: none;
+    -fx-text-alignment: right;
+    -fx-border-color: #ccc;
+}
+
+.buttonTransparentSub {
+     -fx-background-color: rgba(192,192,192, .6);
+}

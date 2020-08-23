@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="900.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="corendon.controllers.ClientsController">
+   <children>
+      <GridPane layoutX="886.0" layoutY="339.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="622.0" minWidth="10.0" prefWidth="270.3333282470703" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1278.0" minWidth="10.0" prefWidth="1084.333251953125" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="245.666748046875" minWidth="10.0" prefWidth="245.666748046875" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="348.0" minHeight="0.0" prefHeight="187.33334350585938" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="720.0" minHeight="10.0" prefHeight="568.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="145.0" minHeight="10.0" prefHeight="145.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TableView fx:id="clientsTableView" prefHeight="614.0" prefWidth="1167.0" stylesheets="@../styles/Styles.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+              <columns>
+                <TableColumn fx:id="Id" prefWidth="75.0" text="#" />
+                <TableColumn fx:id="FirstName" prefWidth="128.0" text="First name" />
+                  <TableColumn fx:id="LastName" prefWidth="329.0" text="Last name" />
+                  <TableColumn fx:id="updatedAt" prefWidth="746.0" text="Last updated" />
+              </columns>
+            </TableView>
+            <Label prefHeight="58.0" prefWidth="399.0" text=" Client management" GridPane.columnIndex="1" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font size="35.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="25.0" />
+               </GridPane.margin>
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/png/font-selection-editor.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Line endX="100.0" startX="1184.0" stroke="#cccccc" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+               <GridPane.margin>
+                  <Insets bottom="20.0" top="100.0" />
+               </GridPane.margin>
+            </Line>
+         </children>
+      </GridPane>
+      <GridPane fx:id="popupGrid" layoutX="10.0" layoutY="10.0" prefWidth="1600.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <GridPane>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Button id="buttonTransparentSub" fx:id="btnForTransparent" mnemonicParsing="false" prefHeight="1084.0" prefWidth="1920.0" stylesheets="@../styles/Styles.css" />
+                  <GridPane>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="524.6666870117188" minWidth="10.0" prefWidth="57.66666030883789" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1409.6666717529297" minWidth="10.0" prefWidth="1404.333339691162" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="309.333251953125" minWidth="10.0" prefWidth="55.333251953125" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="293.3333435058594" minHeight="0.0" prefHeight="116.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="777.6666603088379" minHeight="10.0" prefHeight="680.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="157.0" minHeight="10.0" prefHeight="104.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <GridPane style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="252.33334350585938" minHeight="10.0" prefHeight="136.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="613.6666717529297" minHeight="10.0" prefHeight="447.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="97.0" minHeight="10.0" prefHeight="97.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <GridPane>
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="125.0" minHeight="10.0" prefHeight="115.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="57.666664123535156" minHeight="0.0" prefHeight="21.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="44.0" prefWidth="347.0" text=" Client Details">
+                                       <font>
+                                          <Font size="32.0" />
+                                       </font>
+                                       <graphic>
+                                          <FontAwesomeIconView glyphName="PLUS_CIRCLE" size="30" />
+                                       </graphic>
+                                       <GridPane.margin>
+                                          <Insets top="50.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Line endX="100.0" startX="-1200.0" stroke="#cccccc" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                                    <FontAwesomeIconView glyphName="TRASH" size="40" GridPane.halignment="RIGHT">
+                                       <GridPane.margin>
+                                          <Insets right="55.0" top="50.0" />
+                                       </GridPane.margin>
+                                    </FontAwesomeIconView>
+                                    <Button id="transparantBtn" fx:id="deleteClientBtn" mnemonicParsing="false" prefHeight="46.0" prefWidth="47.0" stylesheets="@../styles/Styles.css" GridPane.halignment="RIGHT">
+                                       <GridPane.margin>
+                                          <Insets right="45.0" top="50.0" />
+                                       </GridPane.margin>
+                                    </Button>
+                                 </children>
+                              </GridPane>
+                              <GridPane GridPane.rowIndex="1">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="698.3333129882812" minWidth="10.0" prefWidth="296.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1153.0000305175781" minWidth="10.0" prefWidth="1114.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="609.6666564941406" minHeight="10.0" prefHeight="572.3333435058594" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <GridPane GridPane.columnIndex="1">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <GridPane>
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="186.33331298828125" minWidth="10.0" prefWidth="66.33334350585938" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="318.6666564941406" minWidth="10.0" prefWidth="318.6666564941406" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <TextField fx:id="firstname" styleClass="textField-large" stylesheets="@../styles/Styles.css" GridPane.columnIndex="1" GridPane.valignment="BOTTOM">
+                                                   <GridPane.margin>
+                                                      <Insets bottom="20.0" />
+                                                   </GridPane.margin></TextField>
+                                                <FontAwesomeIconView glyphName="USER" size="35" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+                                                   <GridPane.margin>
+                                                      <Insets bottom="20.0" />
+                                                   </GridPane.margin></FontAwesomeIconView>
+                                                <Label text="First name" textFill="#cccccc" GridPane.columnIndex="1" GridPane.valignment="BOTTOM" />
+                                             </children>
+                                          </GridPane>
+                                          <GridPane layoutX="10.0" layoutY="10.0" GridPane.rowIndex="1">
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="186.33331298828125" minWidth="10.0" prefWidth="66.33334350585938" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="318.6666564941406" minWidth="10.0" prefWidth="318.6666564941406" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <TextField fx:id="lastname" styleClass="textField-large" stylesheets="@../styles/Styles.css" GridPane.columnIndex="1" />
+                                                <FontAwesomeIconView glyphName="USER" size="35" GridPane.halignment="CENTER">
+                                                   <GridPane.margin>
+                                                      <Insets bottom="15.0" />
+                                                   </GridPane.margin></FontAwesomeIconView>
+                                                <Label text="Last name" textFill="#cccccc" GridPane.columnIndex="1">
+                                                   <GridPane.margin>
+                                                      <Insets top="40.0" />
+                                                   </GridPane.margin></Label>
+                                             </children>
+                                          </GridPane>
+                                          <GridPane GridPane.rowIndex="2">
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="186.33331298828125" minWidth="10.0" prefWidth="66.33334350585938" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="318.6666564941406" minWidth="10.0" prefWidth="318.6666564941406" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <TextField fx:id="email" styleClass="textField-large" stylesheets="@../styles/Styles.css" GridPane.columnIndex="1" GridPane.valignment="BASELINE" />
+                                                <FontAwesomeIconView glyphName="ENVELOPE_ALT" size="35" GridPane.halignment="CENTER" GridPane.valignment="BASELINE" />
+                                                <Label text="E-mail address" textFill="#cccccc" GridPane.columnIndex="1" GridPane.valignment="TOP">
+                                                   <GridPane.margin>
+                                                      <Insets top="38.0" />
+                                                   </GridPane.margin>
+                                                </Label>
+                                             </children>
+                                          </GridPane>
+                                          <GridPane GridPane.columnIndex="1">
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="186.33331298828125" minWidth="10.0" prefWidth="66.33334350585938" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="318.6666564941406" minWidth="10.0" prefWidth="318.6666564941406" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <TextField fx:id="phone" styleClass="textField-large" stylesheets="@../styles/Styles.css" GridPane.columnIndex="1" GridPane.valignment="BOTTOM">
+                                                   <GridPane.margin>
+                                                      <Insets bottom="20.0" />
+                                                   </GridPane.margin></TextField>
+                                                <FontAwesomeIconView glyphName="PHONE" size="35" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+                                                   <GridPane.margin>
+                                                      <Insets bottom="15.0" />
+                                                   </GridPane.margin></FontAwesomeIconView>
+                                                <Label text="Phone number" textFill="#cccccc" GridPane.columnIndex="1" GridPane.valignment="BOTTOM">
+                                                   <GridPane.margin>
+                                                      <Insets />
+                                                   </GridPane.margin></Label>
+                                             </children>
+                                          </GridPane>
+                                          <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="186.33331298828125" minWidth="10.0" prefWidth="66.33334350585938" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="318.6666564941406" minWidth="10.0" prefWidth="318.6666564941406" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <TextField fx:id="address" styleClass="textField-large" stylesheets="@../styles/Styles.css" GridPane.columnIndex="1" />
+                                                <FontAwesomeIconView glyphName="HOME" size="35" GridPane.halignment="CENTER">
+                                                   <GridPane.margin>
+                                                      <Insets bottom="10.0" />
+                                                   </GridPane.margin></FontAwesomeIconView>
+                                                <Label prefHeight="0.0" prefWidth="56.0" text="Address" textFill="#cccccc" GridPane.columnIndex="1">
+                                                   <GridPane.margin>
+                                                      <Insets top="40.0" />
+                                                   </GridPane.margin></Label>
+                                             </children>
+                                          </GridPane>
+                                          <GridPane GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="186.33331298828125" minWidth="10.0" prefWidth="66.33334350585938" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="318.6666564941406" minWidth="10.0" prefWidth="318.6666564941406" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <TextField fx:id="postcalCode" styleClass="textField-large" stylesheets="@../styles/Styles.css" GridPane.columnIndex="1" GridPane.valignment="BASELINE" />
+                                                <FontAwesomeIconView glyphName="MAP_MARKER" size="35" GridPane.halignment="CENTER" GridPane.valignment="BASELINE">
+                                                   <GridPane.margin>
+                                                      <Insets />
+                                                   </GridPane.margin></FontAwesomeIconView>
+                                                <Label text="ZIP / Postal code" textFill="#cccccc" GridPane.columnIndex="1" GridPane.valignment="TOP">
+                                                   <GridPane.margin>
+                                                      <Insets top="38.0" />
+                                                   </GridPane.margin>
+                                                </Label>
+                                             </children>
+                                          </GridPane>
+                                          <GridPane GridPane.columnIndex="2">
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="186.33331298828125" minWidth="10.0" prefWidth="66.33334350585938" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="318.6666564941406" minWidth="10.0" prefWidth="318.6666564941406" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <FontAwesomeIconView glyphName="MAP_ALT" size="35" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+                                                   <GridPane.margin>
+                                                      <Insets bottom="20.0" />
+                                                   </GridPane.margin></FontAwesomeIconView>
+                                                <GridPane GridPane.columnIndex="1">
+                                                   <columnConstraints>
+                                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="283.0" minWidth="10.0" prefWidth="273.6666259765625" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="149.6666259765625" minWidth="10.0" prefWidth="44.3333740234375" />
+                                                   </columnConstraints>
+                                                   <rowConstraints>
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                   </rowConstraints>
+                                                   <children>
+                                                      <TextField fx:id="state" prefHeight="31.0" prefWidth="274.0" styleClass="textField-large" stylesheets="@../styles/Styles.css" GridPane.valignment="BOTTOM">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="20.0" />
+                                                         </GridPane.margin></TextField>
+                                                      <Label text="Province / State / Region" textFill="#cccccc" GridPane.valignment="BOTTOM" />
+                                                   </children>
+                                                </GridPane>
+                                             </children>
+                                          </GridPane>
+                                          <GridPane GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="186.33331298828125" minWidth="10.0" prefWidth="66.33334350585938" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="318.6666564941406" minWidth="10.0" prefWidth="318.6666564941406" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <FontAwesomeIconView glyphName="MAP_PIN" size="35" GridPane.halignment="CENTER">
+                                                   <GridPane.margin>
+                                                      <Insets bottom="10.0" />
+                                                   </GridPane.margin></FontAwesomeIconView>
+                                                <GridPane GridPane.columnIndex="1">
+                                                   <columnConstraints>
+                                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="283.0" minWidth="10.0" prefWidth="273.6666259765625" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="149.6666259765625" minWidth="10.0" prefWidth="44.3333740234375" />
+                                                   </columnConstraints>
+                                                   <rowConstraints>
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                   </rowConstraints>
+                                                   <children>
+                                                      <TextField fx:id="residence" styleClass="textField-large" stylesheets="@../styles/Styles.css" />
+                                                      <Label text="Place of residence" textFill="#cccccc">
+                                                         <GridPane.margin>
+                                                            <Insets top="40.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                   </children>
+                                                </GridPane>
+                                             </children>
+                                          </GridPane>
+                                          <GridPane GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="186.33331298828125" minWidth="10.0" prefWidth="66.33334350585938" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="318.6666564941406" minWidth="10.0" prefWidth="318.6666564941406" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <GridPane GridPane.columnIndex="1">
+                                                   <columnConstraints>
+                                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="283.0" minWidth="10.0" prefWidth="273.6666259765625" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="149.6666259765625" minWidth="10.0" prefWidth="44.3333740234375" />
+                                                   </columnConstraints>
+                                                   <rowConstraints>
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                   </rowConstraints>
+                                                   <children>
+                                                      <TextField fx:id="country" styleClass="textField-large" stylesheets="@../styles/Styles.css" GridPane.valignment="BASELINE">
+                                                         <GridPane.margin>
+                                                            <Insets top="12.0" />
+                                                         </GridPane.margin></TextField>
+                                                      <Label text="Country" textFill="#cccccc" GridPane.valignment="TOP">
+                                                         <GridPane.margin>
+                                                            <Insets top="35.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                   </children>
+                                                </GridPane>
+                                                <FontAwesomeIconView glyphName="FLAG" size="35" GridPane.halignment="CENTER" GridPane.valignment="BASELINE" />
+                                             </children>
+                                          </GridPane>
+                                       </children>
+                                       <GridPane.margin>
+                                          <Insets />
+                                       </GridPane.margin>
+                                    </GridPane>
+                                    <Circle fill="WHITE" radius="100.0" stroke="#cccccc" strokeType="INSIDE" GridPane.halignment="CENTER" />
+                                    <Label alignment="CENTER" prefHeight="38.0" prefWidth="169.0" text="Client info" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="24.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets top="70.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <FontAwesomeIconView glyphName="USER" size="60" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                       <GridPane.margin>
+                                          <Insets bottom="35.0" />
+                                       </GridPane.margin>
+                                    </FontAwesomeIconView>
+                                 </children>
+                              </GridPane>
+                              <GridPane GridPane.rowIndex="2">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1259.3333740234375" minWidth="10.0" prefWidth="1243.3333740234375" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="697.0" minWidth="10.0" prefWidth="166.6666259765625" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <GridPane GridPane.columnIndex="1">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="193.0" minWidth="10.0" prefWidth="66.3333740234375" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="156.666748046875" minWidth="10.0" prefWidth="100.6666259765625" />
+                                          <ColumnConstraints />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Button id="transparantBtn" fx:id="editClientDetailsBtn" mnemonicParsing="false" prefHeight="51.0" prefWidth="47.0" stylesheets="@../styles/Styles.css">
+                                             <graphic>
+                                                <FontAwesomeIconView fill="#7cd400" glyphName="CHECK" size="40" text="" />
+                                             </graphic>
+                                          </Button>
+                                          <Button id="transparantBtn" fx:id="cancelToClientBtn" mnemonicParsing="false" onAction="#handlebackToOverviewBtn" stylesheets="@../styles/Styles.css" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                                             <graphic>
+                                                <FontAwesomeIconView fill="#d0021b" glyphName="CLOSE" size="40" />
+                                             </graphic>
+                                          </Button>
+                                       </children>
+                                    </GridPane>
+                                    <Label fx:id="createLostLuggageWarning" alignment="CENTER" prefHeight="21.0" prefWidth="1270.0" textFill="RED" visible="false">
+                                       <font>
+                                          <Font name="System Bold" size="26.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

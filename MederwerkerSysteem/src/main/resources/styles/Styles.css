@@ -1,0 +1,96 @@
+.button {
+    -fx-font-weight: bold;
+}
+
+.navbar {
+    -fx-background-color: #263849;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+}
+
+.registerLostBtn {
+    -fx-background-color: #EF5350;
+    -fx-cursor: hand;
+}
+
+.registerFoundBtn { 
+    -fx-background-color: #00E676;
+    -fx-cursor: hand;
+}
+
+.importBtns {
+    -fx-background-color: #FFB74D;
+    -fx-cursor: hand;
+}
+
+.searchBtn, .pdfExportBtn{
+    -fx-background-color: #42A5F5;
+    -fx-cursor: hand;
+}
+
+#buttonTransparentSub {
+     -fx-background-color: rgba(255, 255, 255, .4);
+}
+
+#transparantBtn, #transparantBtn:hover {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+.text-field {
+    -fx-background-color: #a9a9a9 , white , white;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+}
+
+.loginBtn, .resetPass {
+    -fx-font-size: 14px; 
+    -fx-background-color: #E74C3C; 
+    -fx-text-fill: #ffffff;
+    -fx-cursor: hand;
+}
+.loginBtn:hover, resetPass:hover {
+    -fx-font-size: 20px; 
+    -fx-background-color: #1e88e5; 
+    -fx-text-fill: #ffffff;
+    -fx-cursor: hand;
+}
+
+.logoutBtn, .logoutBtn:hover {
+     -fx-cursor: hand;
+}
+
+/*original form + custom*/
+
+.h2 {
+    -fx-text-fill: #485465;
+    -fx-font-size: 24;
+}
+
+.textField-large {
+    -fx-font-size: 14;
+    -fx-background-color: -fx-control-inner-background;
+    -fx-border-style: hidden hidden solid hidden;
+    -fx-max-width: 225;
+    -fx-border-color: #979797;
+    -fx-padding: 0;
+}
+
+.textField-def {
+    -fx-font-size: 14;
+    -fx-background-color: -fx-control-inner-background;
+    -fx-border-style: hidden hidden solid hidden;
+    -fx-max-width: 250;
+    -fx-border-color: #979797;
+    -fx-padding: 0;
+}
+
+/*Tabelview     */
+
+.table-view .column-header,
+.table-view .column-header .filler,
+.table-view .column-header-background .filler {
+    -fx-background-color: #eee;
+}
+
+.table-view .column-header .label{
+    -fx-alignment:CENTER_LEFT
+}

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane id="AnchorPane" prefHeight="725.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="corendon.controllers.DashboardController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <GridPane layoutX="700.0" layoutY="318.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="725.0" prefWidth="758.0">
+               <children>
+                  <GridPane layoutX="170.0" layoutY="108.0" prefHeight="517.0" prefWidth="630.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="108.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="255.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="484.0" minHeight="10.0" prefHeight="484.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <TableView fx:id="issueTable" prefHeight="480.0" prefWidth="625.0" stylesheets="@../styles/Styles.css" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                          <columns>
+                              <TableColumn fx:id="reference_number" prefWidth="54.999969482421875" text="Ref ID" />
+                              <TableColumn fx:id="issue_type" prefWidth="88.99996948242188" text="Status" />
+                            <TableColumn fx:id="type" prefWidth="120.0" text="Luggage type" />
+                            <TableColumn fx:id="color" minWidth="0.0" prefWidth="103.33334350585938" text="Color" />
+                              <TableColumn fx:id="brand" minWidth="3.0" prefWidth="85.66665649414062" text="Brand" />
+                              <TableColumn fx:id="label_number" prefWidth="146.0" text="Label number" />
+                          </columns>
+                        </TableView>
+                        <GridPane>
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="440.0" minWidth="10.0" prefWidth="290.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="440.0" minWidth="10.0" prefWidth="185.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="290.0" minWidth="10.0" prefWidth="140.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <TextField fx:id="query" prefHeight="30.0" prefWidth="295.0" promptText="Search Query" style="-fx-background-radius: 0; -fx-background-color: -fx-text-box-border, -fx-control-inner-background;" GridPane.valignment="TOP" />
+                              <Button fx:id="search" mnemonicParsing="false" onAction="#updateIssueTable" prefHeight="30.0" prefWidth="136.0" style="-fx-background-radius: 0;" styleClass="searchBtn" stylesheets="@../styles/Styles.css" text="Search" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+                                 <graphic>
+                                    <ImageView fitHeight="19.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true" translateX="-30.0">
+                                       <image>
+                                          <Image url="@../images/optimized/icn_search.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></Button>
+                              <ChoiceBox fx:id="columns" prefHeight="30.0" prefWidth="214.0" style="-fx-background-radius: 0; -fx-background-color: #fff; -fx-border-color: #ccc;" GridPane.columnIndex="1" GridPane.valignment="TOP">
+                                 <GridPane.margin>
+                                    <Insets left="8.0" />
+                                 </GridPane.margin></ChoiceBox>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <children>
+                  <GridPane layoutX="35.0" layoutY="92.0" prefHeight="533.0" prefWidth="665.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="92.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints percentHeight="50.0" vgrow="SOMETIMES" />
+                      <RowConstraints percentHeight="50.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="recentlyFound" layoutX="25.0" layoutY="53.0" prefHeight="214.0" prefWidth="564.0" stylesheets="@../styles/Styles.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="76.0" AnchorPane.topAnchor="53.0">
+                                <columns>
+                                    <TableColumn fx:id="id" maxWidth="60.0" prefWidth="60.0" resizable="false" text="Ref ID" />
+                                  <TableColumn fx:id="recentlyContent" maxWidth="300.0" prefWidth="300.0" resizable="false" text="Recently found">
+                                       <graphic>
+                                          <ImageView fitHeight="17.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/png/suitcase-with-white-details.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic></TableColumn>
+                                    <TableColumn fx:id="created_at" maxWidth="200.0" prefWidth="200.0" resizable="false" text="Date/Time">
+                                       <graphic>
+                                          <ImageView fitHeight="17.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/png/time.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic></TableColumn>
+                                </columns>
+                              </TableView>
+                              <Button layoutX="463.0" layoutY="16.0" mnemonicParsing="false" onAction="#toImportLost" prefHeight="30.0" prefWidth="126.0" style="-fx-background-radius: 0;" styleClass="importBtns" stylesheets="@../styles/Styles.css" text="Import Lost" textFill="WHITE" />
+                              <Button layoutX="338.0" layoutY="16.0" mnemonicParsing="false" onAction="#toImportFound" prefHeight="30.0" prefWidth="118.0" style="-fx-background-radius: 0;" styleClass="importBtns" stylesheets="@../styles/Styles.css" text="Import Found" textFill="WHITE" />
+                              <Button layoutX="26.0" layoutY="16.0" mnemonicParsing="false" onAction="#registerFound" prefHeight="30.0" prefWidth="150.0" style="-fx-background-radius: 0; -fx-padding: 0;" styleClass="registerFoundBtn" stylesheets="@../styles/Styles.css" text="Register Found" textFill="WHITE">
+                                 <graphic>
+                                    <ImageView fitHeight="30.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true" translateX="-12.0" translateY="1.0">
+                                       <image>
+                                          <Image url="@../images/optimized/btn_registerfound.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></Button>
+                              <Button layoutX="186.0" layoutY="16.0" mnemonicParsing="false" onAction="#registerLost" prefHeight="30.0" prefWidth="141.0" style="-fx-background-radius: 0; -fx-padding: 0;" styleClass="registerLostBtn" stylesheets="@../styles/Styles.css" text="Register Lost" textFill="WHITE">
+                                 <graphic>
+                                    <ImageView fitHeight="30.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true" translateX="-13.0" translateY="1.0">
+                                       <image>
+                                          <Image url="@../images/optimized/btn_registerlost.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></Button>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                           <children>
+                              <TableView fx:id="recentlyLost" layoutX="25.0" layoutY="35.0" prefHeight="231.0" prefWidth="564.0" stylesheets="@../styles/Styles.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="76.0" AnchorPane.topAnchor="35.0">
+                                <columns>
+                                    <TableColumn fx:id="id_string" maxWidth="60.0" prefWidth="60.0" resizable="false" text="Ref ID" />
+                                  <TableColumn fx:id="recentlyContents" maxWidth="300.0" prefWidth="300.0" resizable="false" text="Recently lost">
+                                       <graphic>
+                                          <ImageView fitHeight="19.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/png/magnifying-glass.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic></TableColumn>
+                                    <TableColumn fx:id="created_at_string" maxWidth="200.0" prefWidth="200.0" resizable="false" text="Date/Time">
+                                       <graphic>
+                                          <ImageView fitHeight="17.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/png/time.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic></TableColumn>
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+    </children>
+</AnchorPane>

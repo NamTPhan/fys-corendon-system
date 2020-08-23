@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="725.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="corendon.controllers.StatisticsController">
+   <children>
+      <AnchorPane fx:id="anchorPaneClient" layoutX="-7.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="725.0" prefWidth="1600.0">
+            <children>
+            <Text layoutX="254.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Succesion rate" wrappingWidth="516.9840698242188">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <Button fx:id="pExport" alignment="CENTER" layoutX="1137.0" layoutY="645.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="31.0" prefWidth="118.0" styleClass="pdfExportBtn" stylesheets="@../styles/Styles.css" text="PDF Export" textFill="WHITE" />
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="205.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/png/check-sign-in-a-rounded-green-square.png" />
+               </image>
+            </ImageView>
+            <Line endX="100.0" layoutX="708.0" layoutY="225.0" startX="-500.0" stroke="#cccccc" />
+            </children>
+        </AnchorPane>
+      <LineChart fx:id="lineChart" layoutX="943.0" layoutY="173.0">
+         <xAxis>
+            <NumberAxis label="last 12 months" side="BOTTOM" fx:id="x" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis fx:id="y" label="Amount of luggage" side="LEFT" />
+         </yAxis>
+      </LineChart>
+      <Label fx:id="threeDays" alignment="CENTER" layoutX="170.0" layoutY="321.0" prefHeight="17.0" prefWidth="170.0" textAlignment="RIGHT">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="twentyOneDays" alignment="CENTER" layoutX="328.0" layoutY="321.0" prefHeight="17.0" prefWidth="170.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="thirtyOneDays" alignment="CENTER" layoutX="485.0" layoutY="322.0" prefHeight="17.0" prefWidth="170.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="unresolvedAnnually" alignment="CENTER" layoutX="656.0" layoutY="321.0" prefHeight="29.0" prefWidth="151.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Text fill="#6a99c4" layoutX="184.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3 days" textAlignment="CENTER" wrappingWidth="142.3984375">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#6a99c4" layoutX="347.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="21 days" textAlignment="CENTER" wrappingWidth="131.99999332427979">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#6a99c4" layoutX="485.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monthly" textAlignment="CENTER" wrappingWidth="170.20703125">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#6a99c4" layoutX="667.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unsolved yearly" textAlignment="CENTER" wrappingWidth="142.39845275878906">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Circle fill="#1f93ff00" layoutX="255.0" layoutY="336.0" radius="66.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#1f93ff00" layoutX="413.0" layoutY="336.0" radius="66.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#1f93ff00" layoutX="570.0" layoutY="336.0" radius="66.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#1f93ff00" layoutX="731.0" layoutY="336.0" radius="66.0" stroke="BLACK" strokeType="INSIDE" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="184.0" layoutX="651.0" layoutY="245.0" stroke="BLACK" strokeType="INSIDE" width="2.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+.h2 {
+    -fx-font-size: 24;
+}
+.form .text {
+    -fx-fill: #ccc;
+    -fx-font-size: 18;
+}
+.declineBtn, .confirmBtn{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+.text-field {
+    -fx-background-color: #a9a9a9 , white , white;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+}
+
+#buttonTransparentSub {
+     -fx-background-color: rgba(255, 255, 255, .4);
+}
+
+/*custom*/
+
+.textField-large {
+    -fx-font-size: 14;
+    -fx-background-color: -fx-control-inner-background;
+    -fx-border-style: hidden hidden solid hidden;
+    -fx-max-width: 225;
+    -fx-border-color: #979797;
+    -fx-padding: 0;
+}
