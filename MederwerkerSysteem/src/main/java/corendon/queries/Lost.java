@@ -5,7 +5,6 @@
  */
 package corendon.queries;
 
-import com.sun.xml.internal.ws.util.StringUtils;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import javafx.collections.FXCollections;
@@ -75,10 +74,10 @@ public class Lost {
         return latest(1,5);
     }
     
-    public String getRecentlyContents()
-    {
-        return StringUtils.capitalize(this.type);
-    }
+//    public String getRecentlyContents()
+//    {
+//        return StringUtils.capitalize(this.type);
+//    }
 
     public int getId_string() {
         return id_string;

@@ -5,7 +5,7 @@
  */
 package corendon.queries;
 
-import com.sun.xml.internal.ws.util.StringUtils;
+//import com.sun.xml.internal.ws.util.StringUtils;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import javafx.collections.FXCollections;
@@ -69,9 +69,9 @@ public class Found {
         return latest(1, 5);
     }
 
-    public String getRecentlyContent() {
-        return StringUtils.capitalize(this.type + ", " + this.brand);
-    }
+//    public String getRecentlyContent() {
+//        return StringUtils.capitalize(this.type + ", " + this.brand);
+//    }
 
     public String getId() {
         return "" + this.id;
